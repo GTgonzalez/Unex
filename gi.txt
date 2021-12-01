@@ -1,0 +1,12 @@
+COMANDOS GIT
+git status  = estatus del repositorio
+
+git commit -m "NOMBRE CAMBIO"   = SUBIR CAMBIO
+
+git diff = VER CAMBIOS 
+
+git checkout . = RETROCEDER CAMBIOS 
+
+git add . = Subir cambios 
+git commit -m "CAMBIOS"
+
