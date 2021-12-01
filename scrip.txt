@@ -1,0 +1,6 @@
+                  <div id="grupo__password" class="form-group mb-4"> <!-- CONTRASEÑA -->
+                    <label for="password" class="sr-only">Password</label>
+                    <span  tabindex="0" data-toggle="tooltip" title="La contraseña tiene que ser de 4 a 12 digitos">
+                      <input type="password" name="password" id="password" class="form-control" placeholder="Contraseña">
+                    </span>
+                  </div>
