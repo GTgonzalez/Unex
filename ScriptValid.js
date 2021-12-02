@@ -1,3 +1,14 @@
+const animition = document.getElementById('animation');
+
+const anim = lottie.loadAnimation({
+    container: animition[0],
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'animación.json'
+});
+
+
 const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
 const expresiones = {
@@ -51,3 +62,6 @@ formulario.addEventListener('button', (e) => {
         document.getElementById('grupo__password').classList.add('form-group-corecto-incorrecto')
     }
 });
+
+
+

@@ -9,4 +9,5 @@ git checkout . = RETROCEDER CAMBIOS
 
 git add . = Subir cambios 
 git commit -m "CAMBIOS"
+git push 
 
