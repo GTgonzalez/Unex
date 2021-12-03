@@ -1,44 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Checklist</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Perfiles</title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.ico">
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="assets/images/favicon.ico">
     <link href="assets/css/style.css" rel="stylesheet">
-
 </head>
-
 <body>
-    <!--*******************
-        Preloader start
-    ********************-->
-    <div id="preloader">
-        <div class="sk-three-bounce">
-            <div class="sk-child sk-bounce1"></div>
-            <div class="sk-child sk-bounce2"></div>
-            <div class="sk-child sk-bounce3"></div>
-        </div>
-    </div>
-    <!--*******************
-        Preloader end
-    ********************-->
+    <!--Preloader start-->        
+    <div id="carga">
+        <div id="lottie"></div>
+      </div>
+    <!-- Preloader end-->
 
-
-    <!--**********************************
-        Main wrapper start
-    ***********************************-->
+    <!--Cuerpo de pagina-->
     <div id="main-wrapper">
-        <!--**********************************
-            Nav header start
-        ***********************************-->
+
+        <!--Header start-->
         <div class="nav-header">
-            <a href="index.html" class="brand-logo">
-                <img class="logo-abbr" src="./images/logo.png" alt="">
-                <img class="brand-title" src="./images/logo-text.png" alt="">
+            <a href="Home.html" class="brand-logo">
+                <img class="logo-abbr" src="assets/images/logo.png" alt="">
+                <img class="brand-title" src="assets/images/logo-text.png" alt="">
             </a>
 
             <div class="nav-control">
@@ -47,21 +32,14 @@
                 </div>
             </div>
         </div>
-        <!--**********************************
-            Nav header end
-        ***********************************-->
-
-        <!--**********************************
-            Header start
-        ***********************************-->
         <div class="header">
             <div class="header-content">
                 <nav class="navbar navbar-expand">
                     <div class="collapse navbar-collapse justify-content-between">
                         <div class="header-left">
                         </div>
+                    <!--Menu user start-->
                         <ul class="navbar-nav header-right">
-
                             <li class="nav-item dropdown notification_dropdown">
                                 <a class="nav-link" href="#" role="button" data-toggle="dropdown">
                                     <i class="mdi mdi-24px mdi-account"></i>
@@ -80,48 +58,42 @@
                                             <i class="mdi mdi-24px mdi-email"></i><input class="form-controles" type="text" disabled=»disabled» id="val-username">
                                         </div>
                                         <button class="btn btn-primary mr-3"><span><i
-                                            ></i></span>Edit‏‏‎‏‎‏‏‎</button>
+                                            ></i></span>Edit</button>
                                         <button class="btn btn-secondary mr-3"><span><i
-                                            ></i></span>Close‎</button>
+                                            ></i></span>Close</button>
                                     </ul>
                                 </div>
                                 <li class="nav-item dropdown header-profile">
-                                    <a class="nav-link" href="page-login.html" role="button" data-toggle="dropdown">
+                                    <a  href="index.html" class="nav-link" role="button" data-toggle="dropdown">
                                         <i class="mdi mdi-24px mdi-logout-variant"></i>  
                                     </a>
                                 </li>
                             </li>
-
                         </ul>
+            <!--Menu user end-->
                     </div>
                 </nav>
             </div>
         </div>
-        <!--**********************************
-            Menu User
-        ***********************************-->
-        <!--**********************************
-            Header end ti-comment-alt
-        ***********************************-->
-        <!--**********************************
-            MENU
-        ***********************************-->
+         <!--Header end-->
+
+        <!--Main Menu Sidebar start-->         
         <div class="quixnav">
             <div class="quixnav-scroll">
                 <ul class="metismenu" id="menu">
                     <li class="nav-label first">Main Menu</li>
-                    <li><a href="./index.html" aria-expanded="false"><i class="mdi mdi-24px mdi-home"></i><span
+                    <li><a href="Home.html" aria-expanded="false"><i class="mdi mdi-24px mdi-home"></i><span
                         class="nav-text">Home</span></a></li>
-                        <li class="mm-active"><a href="Checklist.html" aria-expanded="false"><i class="mdi mdi-24px mdi-check-circle"></i><span
-                            class="nav-text">Checklist</span></a></li>
+                        <li class="mm-active"><a href="Perfiles.html" aria-expanded="false"><i class="mdi mdi-24px mdi-check-circle"></i><span
+                            class="nav-text">Perfiles</span></a></li>
                     <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
                                 class="mdi mdi-24px mdi-settings"></i><span class="nav-text">Configuración</span></a>
                         <ul aria-expanded="false">
-                            <li><a href="./Configuración-Colaboradores.html">Colaboradores</a></li>
-                            <li><a href="./Configuración-Departamentos.html">Departamentos</a></li>
+                            <li><a href="Configuración-Colaboradores.html">Colaboradores</a></li>
+                            <li><a href="Configuración-Departamentos.html">Departamentos</a></li>
                         </ul>
                     </li>
-                    <li><a href="./Reportes.html" aria-expanded="false"><i class="mdi mdi-24px mdi-file-chart"></i><span
+                    <li><a href="Reportes.html" aria-expanded="false"><i class="mdi mdi-24px mdi-file-chart"></i><span
                         class="nav-text">Reportes</span></a></li>
                     <li class="nav-label">Perfil y Usuariuos</li>
                     <li><a href="./Usuarios.html" aria-expanded="false"><i class="mdi mdi-24px mdi-view-dashboard"></i><span
@@ -129,12 +101,8 @@
                 </ul>
             </div>
         </div>
-        <!--**********************************
-            Sidebar end
-        ***********************************-->
-        <!--**********************************
-            Content body start
-        ***********************************-->
+
+        <!--Body start-->
         <div class="content-body">
             <div class="container-fluid">
                     <div class="col-lg-12 col-sm-12">
@@ -316,34 +284,43 @@
                             </div>                         
                         </div>
                 </div>
-            <!-- row -->
             </div>
-        <!--**********************************
-            Content body end
-        ***********************************-->
-        <!--**********************************
-            Footer start
-        ***********************************-->
+        <!--Body end-->
+
+        <!--Footer start-->
         <div class="footer">
             <div class="copyright">
                 <div class="logo-f">
-                    <img class="" src="./images/LOGO-FOOTHER.png" alt="">
-                    <img class="" src="./images/Itochu.png" alt="">    
+                    <img class="" src="assets/images/LOGO-FOOTHER.png" alt="">
+                    <img class="" src="assets/images/Itochu.png" alt="">    
                 </div>
-            </div>
-        <!--**********************************
-            Footer end
-        ***********************************-->
+            </div>        
         </div>
-    <!--**********************************
-        Main wrapper end
-    ***********************************-->
-    </div>
-    <!--**********************************
-        Scripts
-    ***********************************-->
-    <!-- Required vendors -->
+        <!--Footer end-->
 
+        <!--Main Menu Sidebar end-->
+        </div>
+    </div>
+    <!--Scripts-->
+    <!-- Librerias -->
+    <script src="assets/vendor/global/global.min.js"></script>
+    <script src="assets/js/quixnav-init.js"></script>
+    <script src="assets/js/custom.min.js"></script>
+
+    <!--  Graficas -->
+    <script src="assets/vendor/flot/jquery.flot.js"></script>
+    <script src="assets/vendor/flot/jquery.flot.resize.js"></script>
+    <script src="assets/js/dashboard/dashboard-1.js"></script>
+
+    <!--  Preloader -->
+    <script src="animacion.js"></script>
+    <script>
+    window.onload = function (){
+      var contenedor = document.getElementById('carga');
+      contenedor.style.visibility = 'hidden';
+      contenedor.style.opacity = '0';
+    }
+    </script>
 
 </body>
 

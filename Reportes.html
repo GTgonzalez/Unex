@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="assets/images/favicon.ico">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!--Preloader start-->        
+    <div id="carga">
+        <div id="lottie"></div>
+      </div>
+    <!-- Preloader end-->
+
+    <!--Cuerpo de pagina-->
+    <div id="main-wrapper">
+        
+        <!--Header start-->
+        <div class="nav-header">
+            <a href="Home.html" class="brand-logo">
+                <img class="logo-abbr" src="assets/images/logo.png" alt="">
+                <img class="brand-title" src="assets/images/logo-text.png" alt="">
+            </a>
+
+            <div class="nav-control">
+                <div class="hamburger">
+                    <span class="line"></span><span class="line"></span><span class="line"></span>
+                </div>
+            </div>
+        </div>
+        <div class="header">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <div class="header-left">
+                        </div>
+                <!--Menu user start-->
+                        <ul class="navbar-nav header-right">
+                            <li class="nav-item dropdown notification_dropdown">
+                                <a class="nav-link" href="#" role="button" data-toggle="dropdown">
+                                    <i class="mdi mdi-24px mdi-account"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <ul class="list-unstyled">
+                                        <li class="media dropdown-item">
+                                            <span class="success"><i class="mdi mdi-36px mdi-account"></i></span>
+                                        </li>               
+                                        <H3>Gerson Gonzalez</H3>
+                                        <hr>
+                                        <div class="media dropdown-item">
+                                            <i class="mdi mdi-24px mdi-cogs"></i><input class="form-controles" type="text"  disabled=»disabled» id="val-username">
+                                        </div>
+                                        <div class="media dropdown-item">
+                                            <i class="mdi mdi-24px mdi-email"></i><input class="form-controles" type="text" disabled=»disabled» id="val-username">
+                                        </div>
+                                        <button class="btn btn-primary mr-3"><span><i
+                                            ></i></span>Edit‏‏‎‏‎‏‏‎</button>
+                                        <button class="btn btn-secondary mr-3"><span><i
+                                            ></i></span>Close‎</button>
+                                    </ul>
+                                </div>
+                                <li class="nav-item dropdown header-profile">
+                                    <a class="nav-link" href="index.html" role="button" data-toggle="dropdown">
+                                        <i class="mdi mdi-24px mdi-logout-variant"></i>  
+                                    </a>
+                                </li>
+                            </li>
+                        </ul>
+        <!--Menu user end-->                        
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--Header end-->
+
+        <!--Main Menu Sidebar start-->
+        <div class="quixnav">
+            <div class="quixnav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li class="nav-label first">Main Menu</li>
+                    <li><a href="Home.html" aria-expanded="false"><i class="mdi mdi-24px mdi-home"></i><span
+                        class="nav-text">Home</span></a></li>
+                        <li class=""><a href="Perfiles.html" aria-expanded="false"><i class="mdi mdi-24px mdi-check-circle"></i><span
+                            class="nav-text">Perfiles</span></a></li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="mdi mdi-24px mdi-settings"></i><span class="nav-text">Configuración</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="Configuración-Colaboradores.html">Colaboradores</a></li>
+                            <li><a href="Configuración-Departamentos.html">Departamentos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Reportes.html" aria-expanded="false"><i class="mdi mdi-24px mdi-file-chart"></i><span
+                        class="nav-text">Reportes</span></a></li>
+                    <li class="nav-label">Perfil y Usuariuos</li>
+                    <li><a href="./app-calender.html" aria-expanded="false"><i class="mdi mdi-24px mdi-view-dashboard"></i><span
+                        class="nav-text">Usuarios</span></a></li>                
+                </ul>
+            </div>
+        </div>
+
+        <!--Body start-->        
+        <div class="content-body">
+            <div class="container-fluid">
+                <div class="row page-titles mx-0">
+                    <div class="col-sm-6">
+                        <div class="welcome-text">
+                            <h4>Hi, welcome back!</h4>
+                            <span class="ml-1">Flot Chart</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Charts</a></li>
+                            <li class="breadcrumb-item active"><a href="javascript:void(0)">Flot</a></li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Bar Chart</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="flotBar1" class="flot-chart"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Bar Chart</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="flotBar2" class="flot-chart"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Line Chart</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="flotLine1" class="flot-chart"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Line Chart</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="flotLine2" class="flot-chart"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Line Chart</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="flotLine3" class="flot-chart"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Area Chart</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="flotArea1" class="flot-chart"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Area Chart</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="flotArea2" class="flot-chart"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Realtime Chart</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="flotRealtime1" class="flot-chart"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Realtime Chart</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="flotRealtime2" class="flot-chart"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Body end-->
+        
+        <!--Footer start-->
+        <div class="footer">
+            <div class="copyright">
+                <div class="logo-f">
+                    <img class="" src="assets/images/LOGO-FOOTHER.png" alt="">
+                    <img class="" src="assets/images/Itochu.png" alt="">    
+                </div>
+            </div>        
+        </div>
+        <!--Footer end-->
+
+    <!--Main Menu Sidebar end-->
+    </div>
+
+    <!--Scripts-->
+    <!-- Librerias -->
+    <script src="assets/vendor/global/global.min.js"></script>
+    <script src="assets/js/quixnav-init.js"></script>
+    <script src="assets/js/custom.min.js"></script>
+    <script src="assets/vendor/flot/jquery.flot.js"></script>
+    <script src="assets/vendor/flot/jquery.flot.pie.js"></script>
+    <script src="assets/vendor/flot/jquery.flot.resize.js"></script>
+    <script src="assets/vendor/flot-spline/jquery.flot.spline.min.js"></script>
+    <script src="assets/js/plugins-init/flot-init.js"></script>
+    
+    <!--  Graficas -->
+    <script src="assets/vendor/flot/jquery.flot.js"></script>
+    <script src="assets/vendor/flot/jquery.flot.resize.js"></script>
+    <script src="assets/js/dashboard/dashboard-1.js"></script>
+
+    <!--  Preloader -->
+    <script src="animacion.js"></script>
+    <script>
+    window.onload = function (){
+      var contenedor = document.getElementById('carga');
+      contenedor.style.visibility = 'hidden';
+      contenedor.style.opacity = '0';
+    }
+    </script>
+</body>
+</html>

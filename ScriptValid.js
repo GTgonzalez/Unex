@@ -1,14 +1,5 @@
 const animition = document.getElementById('animation');
 
-const anim = lottie.loadAnimation({
-    container: animition[0],
-    renderer: 'svg',
-    loop: true,
-    autoplay: true,
-    path: 'animación.json'
-});
-
-
 const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
 const expresiones = {
@@ -19,7 +10,6 @@ const campos = {
 	password: false,
 	email: false,
 }
-
 const validarFormulario = (e) => {
     switch (e.target.name){
         case "email":
@@ -43,7 +33,6 @@ const validarFormulario = (e) => {
     }
 
 }
-
 inputs.forEach((input) =>{
     input.addEventListener('keyup', validarFormulario);
     input.addEventListener('blur', validarFormulario);
@@ -62,6 +51,3 @@ formulario.addEventListener('button', (e) => {
         document.getElementById('grupo__password').classList.add('form-group-corecto-incorrecto')
     }
 });
-
-
-

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Perfiles</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="assets/images/favicon.ico">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!--Preloader start-->        
+    <div id="carga">
+        <div id="lottie"></div>
+      </div>
+    <!-- Preloader end-->
+
+    <!--Cuerpo de pagina-->
+    <div id="main-wrapper">
+
+        <!--Header start-->->
+        <div class="nav-header">
+            <a href="index.html" class="brand-logo">
+                <img class="logo-abbr" src="assets/images/logo.png" alt="">
+                <img class="brand-title" src="assets/images/logo-text.png" alt="">
+            </a>
+
+            <div class="nav-control">
+                <div class="hamburger">
+                    <span class="line"></span><span class="line"></span><span class="line"></span>
+                </div>
+            </div>
+        </div>
+        <div class="header">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <div class="header-left">
+                        </div>
+                    <!--Menu user start-->
+                        <ul class="navbar-nav header-right">
+                            <li class="nav-item dropdown notification_dropdown">
+                                <a class="nav-link" href="#" role="button" data-toggle="dropdown">
+                                    <i class="mdi mdi-24px mdi-account"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <ul class="list-unstyled">
+                                        <li class="media dropdown-item">
+                                            <span class="success"><i class="mdi mdi-36px mdi-account"></i></span>
+                                        </li>               
+                                        <H3>Gerson Gonzalez</H3>
+                                        <hr>
+                                        <div class="media dropdown-item">
+                                            <i class="mdi mdi-24px mdi-cogs"></i><input class="form-controles" type="text"  disabled=»disabled» id="val-username">
+                                        </div>
+                                        <div class="media dropdown-item">
+                                            <i class="mdi mdi-24px mdi-email"></i><input class="form-controles" type="text" disabled=»disabled» id="val-username">
+                                        </div>
+                                        <button class="btn btn-primary mr-3"><span><i
+                                            ></i></span>Edit‏‏‎‏‎‏‏‎</button>
+                                        <button class="btn btn-secondary mr-3"><span><i
+                                            ></i></span>Close‎</button>
+                                    </ul>
+                                </div>
+                                <li class="nav-item dropdown header-profile">
+                                    <a class="nav-link" href="index.html" role="button" data-toggle="dropdown">
+                                        <i class="mdi mdi-24px mdi-logout-variant"></i>  
+                                    </a>
+                                </li>
+                            </li>
+                        </ul>
+                <!--Menu user end-->
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--Header end-->
+
+        <!--Main Menu Sidebar start-->  
+        <div class="quixnav">
+            <div class="quixnav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li class="nav-label first">Main Menu</li>
+                    <li><a href="index.html" aria-expanded="false"><i class="mdi mdi-24px mdi-home"></i><span
+                        class="nav-text">Home</span></a></li>
+                        <li class=""><a href="Perfiles.html" aria-expanded="false"><i class="mdi mdi-24px mdi-check-circle"></i><span
+                            class="nav-text">Perfiles</span></a></li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="mdi mdi-24px mdi-settings"></i><span class="nav-text">Configuración</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="Configuración-Colaboradores.html">Colaboradores</a></li>
+                            <li><a href="Configuración-Departamentos.html">Departamentos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./Reportes.html" aria-expanded="false"><i class="mdi mdi-24px mdi-file-chart"></i><span
+                        class="nav-text">Reportes</span></a></li>
+                    <li class="nav-label">Perfil y Usuariuos</li>
+                    <li><a href="./app-calender.html" aria-expanded="false"><i class="mdi mdi-24px mdi-view-dashboard"></i><span
+                        class="nav-text">Usuarios</span></a></li>                
+                </ul>
+            </div>
+        </div>
+        
+        <!--Body start-->
+        <div class="content-body">
+            <div class="container-fluid">
+                <div class="col-lg-12 col-sm-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="profile-tab">
+                                <div class="custom-tab-1">
+                                    <ul class="nav nav-tabs">
+                                        <li class="nav-item"><a href="#añadir" data-toggle="tab" class="nav-link active show"><i class="mdi mdi-24px mdi-account-plus"></i> Añadir</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#editar" data-toggle="tab" class="nav-link"><i class="mdi mdi-24px mdi-lead-pencil"></i> Editar</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#eliminar" data-toggle="tab" class="nav-link"><i class="mdi mdi-24px mdi-delete"></i> Eliminar</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div id="añadir" class="tab-pane fade active show">
+                                            <div class="añadir-content pt-3">
+                                                <div class="form-row">
+                                                    <div class="col-lg-6">
+                                                        <div class="card-header">
+                                                            <h4 class="card-title">
+                                                                Seleccionar colaborador
+                                                            </h4>
+                                                        </div>
+                                                        <div class="tab-content">
+                                                            <div id="my-posts" class="tab-pane fade active show">
+                                                                <div class="my-post-content pt-3">
+                                                                    <div class="media ">                                                          
+                                                                        <i class="mdi mdi-24px mdi-account"></i><input class="form-control bg-transparent" placeholder="Nombre de colaborador"></input>
+                                                                        <li class="media dropdown-item">
+                                                                            <span class="success">
+                                                                                <i class="mdi mdi-24px mdi-account-search"></i>
+                                                                            </span>
+                                                                            <button type="button" class="btn btn-rounded btn-info ">
+                                                                                <span class="text-danger">
+                                                                                    <i class="fa fa-lg fa-plus color-info"></i>
+                                                                                </span>
+                                                                                ‎      ‏‏‎‎      ‏‏‎‎      ‏‏‎‎      Agregar                            
+                                                                            </button>
+                                                                            <button type="button" class="btn btn-rounded btn-danger ">
+                                                                                <span class="text-danger">
+                                                                                    <i class="fa fa-lg fa-ban color-danger"></i>
+                                                                                </span>
+                                                                                ‎      ‏‏‎‎      ‏‏‎‎      ‏‏‎‎      ‏‏‎Cancelar                            
+                                                                            </button> 
+                                                                        </li>                                                                                                                                                                                                                                                                             
+                                                                    </div>
+                                                                    <br>            
+                                                                </div>
+                                                            </div>
+                                                        </div>  
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="card">
+                                                        <div class="table-responsive">
+                                                            <table class="table student-data-table m-t-20">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Nombre</th>
+                                                                        <th>Departamento</th>
+                                                                        <th>Area</th>
+                                                                        <th>Telefono</th>
+                                                                        <th>Correo Electronico</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>Adelita Villatoro</td>
+                                                                        <td>Contabilidad y Finanzas</td>
+                                                                        <td>Oficina Central</td>
+                                                                        <td>N/A</td>
+                                                                        <td> acvillatoro@unexguatemala.com</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Amilcar Mendez</td>
+                                                                        <td>Jefe de Catación</td>    
+                                                                        <td>Ixchel</td>
+                                                                        <td>40318319</td>
+                                                                        <td></td>                        
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Brian Cabrera</td>
+                                                                        <td>IT Department</td>                                                
+                                                                        <td>Oficina Central</td>
+                                                                        <td></td>
+                                                                        <td></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Byron Escobar</td>
+                                                                        <td>Producción y Seguridad Industrial</td>                                                                                                                                     
+                                                                        <td>Ixchel</td>   
+                                                                        <td></td>                                            
+                                                                        <td></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Carlos Rodríguez</td>
+                                                                        <td>Comercialización</td>                                                                      
+                                                                        <td>Barberena</td>
+                                                                        <td></td>   
+                                                                        <td></td>                                         
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Claudia de León</td>
+                                                                        <td>Recursos Humanos</td>                                                                      
+                                                                        <td>Oficina Central</td>
+                                                                        <td></td>  
+                                                                        <td></td>                                           
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>David Tello</td>
+                                                                        <td>Contable y Finanzas</td>                                                                      
+                                                                        <td>Oficina Central</td>
+                                                                        <td></td>         
+                                                                        <td></td>                                   
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>                                                                                                                         
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>        
+                                        
+                                        <div id="editar" class="tab-pane fade">
+                                            <div class="profile-editar">
+                                                <div class="pt-4 border-bottom-1 pb-4">
+                                                    <div class="form-row">
+                                                        <div class="col-lg-6">
+                                                            <div class="card-header">
+                                                                <h4 class="card-title">
+                                                                    Seleccionar colaborador
+                                                                </h4>
+                                                            </div>
+                                                            <div class="tab-content">
+                                                                <div id="my-posts" class="tab-pane fade active show">
+                                                                    <div class="my-post-content pt-3">
+                                                                        <div class="media ">                                                          
+                                                                            <i class="mdi mdi-24px mdi-account"></i><input class="form-control bg-transparent" placeholder="Nombre de colaborador"></input>
+                                                                            <li class="media dropdown-item">
+                                                                                <span class="success">
+                                                                                    <i class="mdi mdi-24px mdi-account-search"></i>
+                                                                                </span>
+                                                                            </li>
+                                                                        </div>
+                                                                        <br>            
+                                                                    </div>
+                                                                </div>
+                                                            </div>  
+                                                        </div>
+                                                    </div>
+                                                <div class="col-lg-12">
+                                                    <br>
+                                                    <div class="card">
+                                                        <div class="table-responsive">
+                                                            <table class="table student-data-table m-t-20">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Nombre</th>
+                                                                        <th>Departamento</th>
+                                                                        <th>Area</th>
+                                                                        <th>Telefono</th>
+                                                                        <th>Correo Electronico</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>Adelita Villatoro</td>
+                                                                        <td>Contabilidad y Finanzas</td>
+                                                                        <td>Oficina Central</td>
+                                                                        <td>N/A</td>
+                                                                        <td> acvillatoro@unexguatemala.com</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Amilcar Mendez</td>
+                                                                        <td>Jefe de Catación</td>    
+                                                                        <td>Ixchel</td>
+                                                                        <td>40318319</td>
+                                                                        <td></td>                        
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Brian Cabrera</td>
+                                                                        <td>IT Department</td>                                                
+                                                                        <td>Oficina Central</td>
+                                                                        <td></td>
+                                                                        <td></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Byron Escobar</td>
+                                                                        <td>Producción y Seguridad Industrial</td>                                                                                                                                     
+                                                                        <td>Ixchel</td>   
+                                                                        <td></td>                                            
+                                                                        <td></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Carlos Rodríguez</td>
+                                                                        <td>Comercialización</td>                                                                      
+                                                                        <td>Barberena</td>
+                                                                        <td></td>   
+                                                                        <td></td>                                         
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Claudia de León</td>
+                                                                        <td>Recursos Humanos</td>                                                                      
+                                                                        <td>Oficina Central</td>
+                                                                        <td></td>  
+                                                                        <td></td>                                           
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>David Tello</td>
+                                                                        <td>Contable y Finanzas</td>                                                                      
+                                                                        <td>Oficina Central</td>
+                                                                        <td></td>         
+                                                                        <td></td>                                   
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>                                                                                                                         
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        
+
+                                        <div id="eliminar" class="tab-pane fade">
+                                            <div class="profile-eliminar">
+                                                <div class="form-row">
+                                                    <div class="col-lg-6">
+                                                        <div class="card-header">
+                                                            <h4 class="card-title">
+                                                                Seleccionar colaborador
+                                                            </h4>
+                                                        </div>
+                                                        <div class="tab-content">
+                                                            <div id="my-posts" class="tab-pane fade active show">
+                                                                <div class="my-post-content pt-3">
+                                                                    <div class="media ">                                                          
+                                                                        <i class="mdi mdi-24px mdi-account"></i><input class="form-control bg-transparent" placeholder="Nombre de colaborador"></input>
+                                                                        <li class="media dropdown-item">
+                                                                            <span class="success">
+                                                                                <i class="mdi mdi-24px mdi-account-search"></i>
+                                                                            </span>
+                                                                        </li>
+                                                                        
+                                                                        <button type="button" class="btn btn-rounded btn-danger espacio ">
+                                                                            <span class="text-danger">
+                                                                                <i class="fa fa-lg fa-ban color-danger"></i>
+                                                                            </span>
+                                                                            ‎      ‏‏‎‎   Eliminar                            
+                                                                        </button>
+           
+                                                                    </div>
+                                                                    <br>            
+                                                                </div>
+                                                            </div>
+                                                        </div>  
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="card">
+                                                        <div class="table-responsive">
+                                                            <table class="table student-data-table m-t-20">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Nombre</th>
+                                                                        <th>Departamento</th>
+                                                                        <th>Area</th>
+                                                                        <th>Telefono</th>
+                                                                        <th>Correo Electronico</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>Adelita Villatoro</td>
+                                                                        <td>Contabilidad y Finanzas</td>
+                                                                        <td>Oficina Central</td>
+                                                                        <td>N/A</td>
+                                                                        <td> acvillatoro@unexguatemala.com</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Amilcar Mendez</td>
+                                                                        <td>Jefe de Catación</td>    
+                                                                        <td>Ixchel</td>
+                                                                        <td>40318319</td>
+                                                                        <td></td>                        
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Brian Cabrera</td>
+                                                                        <td>IT Department</td>                                                
+                                                                        <td>Oficina Central</td>
+                                                                        <td></td>
+                                                                        <td></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Byron Escobar</td>
+                                                                        <td>Producción y Seguridad Industrial</td>                                                                                                                                     
+                                                                        <td>Ixchel</td>   
+                                                                        <td></td>                                            
+                                                                        <td></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Carlos Rodríguez</td>
+                                                                        <td>Comercialización</td>                                                                      
+                                                                        <td>Barberena</td>
+                                                                        <td></td>   
+                                                                        <td></td>                                         
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Claudia de León</td>
+                                                                        <td>Recursos Humanos</td>                                                                      
+                                                                        <td>Oficina Central</td>
+                                                                        <td></td>  
+                                                                        <td></td>                                           
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>David Tello</td>
+                                                                        <td>Contable y Finanzas</td>                                                                      
+                                                                        <td>Oficina Central</td>
+                                                                        <td></td>         
+                                                                        <td></td>                                   
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>                                                                                                                         
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                        
+                </div>
+            </div>
+        </div>
+        <!--Body end-->
+
+        <!--Footer start-->
+        <div class="footer">
+            <div class="copyright">
+                <div class="logo-f">
+                    <img class="" src="assets/images/LOGO-FOOTHER.png" alt="">
+                    <img class="" src="assets/images/Itochu.png" alt="">    
+                </div>
+            </div>        
+        </div>
+        <!--Footer end-->
+
+        <!--Main Menu Sidebar end-->    
+    </div>
+    <!--Scripts-->
+    <!-- Librerias -->
+    <script src="assets/vendor/global/global.min.js"></script>
+    <script src="assets/js/quixnav-init.js"></script>
+    <script src="assets/js/custom.min.js"></script>
+    
+    <!--  Graficas -->
+    <script src="assets/vendor/flot/jquery.flot.js"></script>
+    <script src="assets/vendor/flot/jquery.flot.resize.js"></script>
+    <script src="assets/js/dashboard/dashboard-1.js"></script>
+
+    <!--  Preloader -->
+    <script src="animacion.js"></script>
+    <script>
+    window.onload = function (){
+      var contenedor = document.getElementById('carga');
+      contenedor.style.visibility = 'hidden';
+      contenedor.style.opacity = '0';
+    }
+    </script>
+</body>
+</html>
