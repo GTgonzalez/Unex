@@ -1,5 +1,3 @@
-const animition = document.getElementById('animation');
-
 const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
 const expresiones = {

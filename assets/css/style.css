@@ -9,9 +9,6 @@
 @import url(./../vendor/aos/css/aos.min.css);
 @import url(./../vendor/perfect-scrollbar/css/perfect-scrollbar.css);
 @import url(./../vendor/metismenu/css/metisMenu.min.css);
-body{
-  font-family: 'Nunito', sans-serif;
-}
 *,*:after, *:before{
   margin: 0;
   padding: 0;
@@ -1881,19 +1878,19 @@ fieldset:disabled a.btn {
   border-color: #006A92;}
   .btn-primary:hover {
     color: #fff;
-    background-color: #325D7F;
-    border-color: #325D7F; }
+    background-color: #04456E;
+    border-color: #04456E; }
   .btn-primary:focus, .btn-primary.focus {
-    box-shadow: 0 0 0 0.2rem rgba(114, 88, 224, 0.5); }
+    box-shadow: 0 0 0 0.2rem #006A92; }
   .btn-primary.disabled, .btn-primary:disabled {
     color: #fff;
-    background-color: #593bdb;
-    border-color: #593bdb; }
+    background-color: #006A92;
+    border-color: #006A92; }
   .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
   .show > .btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #4123c0;
-    border-color: #3d21b5; }
+    background-color: #006A92;
+    border-color: #006A92; }
     .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
     .show > .btn-primary.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(114, 88, 224, 0.5); }
@@ -3075,7 +3072,7 @@ input[type="button"].btn-block {
     cursor: default; }
 
 .nav-tabs {
-  border-bottom: 1px solid #dee2e6; }
+  border-bottom: 0px solid #dee2e6; }
   .nav-tabs .nav-item {
     margin-bottom: -1px; }
   .nav-tabs .nav-link {
@@ -3434,8 +3431,7 @@ input[type="button"].btn-block {
 .card-body {
   flex: 1 1 auto;
   padding: 1.25rem;
-  margin-left: 30px;
-  margin-top: -15px; }
+}
 
 .card-title {
   margin-bottom: 0.75rem; }
@@ -8329,7 +8325,7 @@ svg.pulse-svg {
     align-items: center; }
     .header-right .nav-item .nav-link {
       color: #464a53;
-      font-size: 18px; }
+      font-size: 15px; }
   .header-right > li:not(:first-child) {
     padding-left: 0.625rem; }
   @media only screen and (max-width: 767px) {
@@ -8377,11 +8373,11 @@ svg.pulse-svg {
     width: 30px;
     height: 30px;
     border-radius: 50px; }
-    .Fondo{
-      display:block;
-      margin:auto;
-      width: 1080px;
-      height: 720 px;  
+    .backgroundimg{
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      
     }
   .header-right .header-profile .dropdown-toggle i {
     font-size: 1.25rem; }
@@ -10231,6 +10227,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
     .quixnav {
       width: 14.375rem; } }
   .quixnav ul {
+    font-weight: bold;
     padding: 0;
     margin: 0;
     list-style: none; }
@@ -10254,10 +10251,12 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
         position: relative;
         top: -2px; }
       .quixnav .metismenu > li > a {
+        font-weight: bold;
         color: #393A3A; }
       .quixnav .metismenu > li:hover > a, .quixnav .metismenu > li:focus > a, .quixnav .metismenu > li.mm-active > a {
-        background-color: #04456eb9;
-        color: #FFFFFF; }
+        font-weight: bold;
+        background-color: #FFFFFF;
+        color: #04456eb9; }
       .quixnav .metismenu > li.mm-active ul {
         background-color: rgba(88, 115, 254, 0.04); }
         .quixnav .metismenu > li.mm-active ul ul {
@@ -10265,11 +10264,13 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
     .quixnav .metismenu li {
       position: relative; }
     .quixnav .metismenu ul {
+      font-weight: bold;
       background-color: #1c0f54;
       transition: all .2s ease-in-out; }
       .quixnav .metismenu ul a {
+        font-weight: bold;
         padding-left: 54px;
-        font-weight: 300; }
+         }
         .quixnav .metismenu ul a:hover, .quixnav .metismenu ul a:focus, .quixnav .metismenu ul a.mm-active {
           text-decoration: none;
           color: #006A92; }
@@ -11118,7 +11119,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   [data-sidebar-style="overlay"] .nav-header .hamburger.is-active {
     left: 0; }
     [data-sidebar-style="overlay"] .nav-header .hamburger.is-active .line {
-      background-color: #593bdb; }
+      background-color: #04456E; }
 
 [data-sidebar-style="overlay"] .menu-toggle .nav-header {
   position: absolute;
@@ -12819,7 +12820,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 .profile-tab .nav-item .nav-link {
   font-size: 18px;
   padding: 10px 0 .50px;
-  margin-right: 250px;
+  margin-right: 30px;
   transition: all 0.5s ease-in-out;
   border: none;
   border-bottom: .20px solid transparent;
@@ -12828,7 +12829,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
     border: 0;
     background: transparent;
     background: transparent;
-    border-bottom: 3px solid #006A92;
+    border-bottom: 2px solid #006A92;
     color: #006A92; }
 
 .post-input {
@@ -15341,7 +15342,7 @@ button {
   transition: all .5s ease-in-out;
   position: relative;
   border: 0px solid transparent;
-  border-radius: 30px;
+  border-radius: 15px;
   box-shadow: 0px 0px 13px 0px rgba(82, 63, 105, 0.05); }
   .card-body {
     padding: 1.25rem;
