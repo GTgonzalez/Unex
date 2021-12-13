@@ -10,7 +10,6 @@
 @import url(./../vendor/perfect-scrollbar/css/perfect-scrollbar.css);
 @import url(./../vendor/metismenu/css/metisMenu.min.css);
 
-
 .center1{
   display: flex;
   justify-content: center;
@@ -20,19 +19,20 @@
 
 .avatar-upload {
   position: relative;
-  max-width: 205px;
-  
+  max-width: 170px;
+  padding-bottom: 80px;
 }
 .avatar-upload .avatar-edit {
   position: absolute;
-  right: 12px;
+  right: 0px;
   z-index: 1;
-  top: 10px;
+  top: 0px;
 }
 .avatar-upload .avatar-edit input {
   display: none;
 }
 .avatar-upload .avatar-edit input + label {
+
   display: inline-block;
   width: 40px;
   height: 40px;
@@ -40,17 +40,17 @@
   border-radius: 100%;
   background: #FFFFFF;
   border: 1px solid transparent;
-  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.12);
+  box-shadow: 0px 2px 4px 0px #F5F5F5;
   cursor: pointer;
   font-weight: normal;
   transition: all .2s ease-in-out;
 }
 .avatar-upload .avatar-edit input + label:hover {
-  background: #f1f1f1;
-  border-color: #d6d6d6;
+  background: #ffffff;
+  border-color: #393a3a0c;
 }
 .avatar-upload .avatar-edit input + label:after {
-  content: "\f040";
+  content: "\01F4F7";
   font-family: 'FontAwesome';
   color: #757575;
   position: absolute;
@@ -66,8 +66,8 @@
   height: 230px;
   position: relative;
   border-radius: 100%;
-  border: 6px solid #F8F8F8;
-  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
+  border: 6px solid #393a3a0c;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.171);
 }
 .avatar-upload .avatar-preview > div {
   width: 100%;
@@ -2032,17 +2032,17 @@ fieldset:disabled a.btn {
   border-color: #00CB97; }
   .btn-info:hover {
     color: #ffffff;
-    background-color: #00CB97;
-    border-color: #00CB97; }
+    background-color: #00cb98e7;
+    border-color: #00cb98e7; }
   .btn-info:focus, .btn-info.focus {
-    box-shadow: 0 0 0 0.2rem rgba(73, 199, 171, 0.5); }
+    box-shadow: 0 0 0 0.2rem #03bd8e; }
   .btn-info.disabled, .btn-info:disabled {
     color: #212529;
     background-color: #50E3C2;
     border-color: #50E3C2; }
   .btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active,
   .show > .btn-info.dropdown-toggle {
-    color: #212529;
+    color: #ffffff;
     background-color: #24dcb3;
     border-color: #22d2aa; }
     .btn-info:not(:disabled):not(.disabled):active:focus, .btn-info:not(:disabled):not(.disabled).active:focus,

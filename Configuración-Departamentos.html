@@ -107,331 +107,439 @@
         <!--Body start-->
         <div class="content-body">
             <div class="container-fluid">
-                <div class="col-lg-12 col-sm-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="profile-tab">
-                                <div class="custom-tab-1">
-                                    <ul class="nav nav-tabs">
-                                        <li class="nav-item"><a href="#añadir" data-toggle="tab" class="nav-link active show"><i class="mdi mdi-24px mdi-account-plus"></i> Añadir</a>
-                                        </li>
-                                        <li class="nav-item"><a href="#editar" data-toggle="tab" class="nav-link"><i class="mdi mdi-24px mdi-lead-pencil"></i> Editar</a>
-                                        </li>
-                                        <li class="nav-item"><a href="#eliminar" data-toggle="tab" class="nav-link"><i class="mdi mdi-24px mdi-delete"></i> Eliminar</a>
-                                        </li>
-                                    </ul>
-                                    <div class="tab-content">
-                                        <div id="añadir" class="tab-pane fade active show">
-                                            <div class="añadir-content pt-3">
-                                                <div class="form-row">
-                                                    <div class="col-lg-6">
-                                                        <div class="card-header">
-                                                            <h4 class="card-title">
-                                                                Seleccionar colaborador
-                                                            </h4>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="profile-tab">
+                            <div class="custom-tab-1">
+                                <div class="row">
+                                    <div class="col-lg-12 col-sm-12">
+                                        <ul class="nav nav-tabs">
+                                            <li class="nav-item"><a href="#buscar" data-toggle="tab" class="nav-link active show"><i class="mdi mdi-24px mdi-account-plus"></i> Buscar</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#añadir" data-toggle="tab" class="nav-link"><i class="mdi mdi-24px mdi-account-plus"></i> Añadir</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#editar" data-toggle="tab" class="nav-link"><i class="mdi mdi-24px mdi-lead-pencil"></i> Editar</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#eliminar" data-toggle="tab" class="nav-link"><i class="mdi mdi-24px mdi-delete"></i> Eliminar</a>
+                                            </li>
+                                        </ul>
+                                        <br>
+                                        <div class="tab-content">
+                                            <div id="buscar" class="tab-pane fade active show">
+                                                <div  class="buscar-content pt-3">
+                                                    <div class="post-input">
+                                                        <p><i class="mdi mdi-24px mdi-account-search"></i> Buscar Regiones</p>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-4">
+                                                            <div class="media">
+                                                                <i class="mdi mdi-24px mdi-account"></i><input class="form-control bg-transparent" placeholder="Nombre de region"></input>
+                                                                <div class="col-auto">
+                                                                    <div class="media">
+                                                                        <span class="success">
+                                                                            <i class="mdi mdi-24px mdi-account-search"></i>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <div class="tab-content">
-                                                            <div id="my-posts" class="tab-pane fade active show">
-                                                                <div class="my-post-content pt-3">
-                                                                    <div class="media ">                                                          
-                                                                        <i class="mdi mdi-24px mdi-account"></i><input class="form-control bg-transparent" placeholder="Nombre de colaborador"></input>
-                                                                        <li class="media dropdown-item">
-                                                                            <span class="success">
-                                                                                <i class="mdi mdi-24px mdi-account-search"></i>
-                                                                            </span>
-                                                                            <button type="button" class="btn btn-rounded btn-info ">
-                                                                                <span class="text-danger">
-                                                                                    <i class="fa fa-lg fa-plus color-info"></i>
-                                                                                </span>
-                                                                                ‎      ‏‏‎‎      ‏‏‎‎      ‏‏‎‎      Agregar                            
-                                                                            </button>
-                                                                            <button type="button" class="btn btn-rounded btn-danger ">
-                                                                                <span class="text-danger">
-                                                                                    <i class="fa fa-lg fa-ban color-danger"></i>
-                                                                                </span>
-                                                                                ‎      ‏‏‎‎      ‏‏‎‎      ‏‏‎‎      ‏‏‎Cancelar                            
-                                                                            </button> 
-                                                                        </li>                                                                                                                                                                                                                                                                             
-                                                                    </div>
-                                                                    <br>            
-                                                                </div>
-                                                            </div>
-                                                        </div>  
+                                                        <br> <br>  
                                                     </div>
-                                                </div>
-                                                <div class="col-lg-12">
-                                                    <div class="card">
-                                                        <div class="table-responsive">
-                                                            <table class="table student-data-table m-t-20">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th>Nombre</th>
-                                                                        <th>Departamento</th>
-                                                                        <th>Area</th>
-                                                                        <th>Telefono</th>
-                                                                        <th>Correo Electronico</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>Adelita Villatoro</td>
-                                                                        <td>Contabilidad y Finanzas</td>
-                                                                        <td>Oficina Central</td>
-                                                                        <td>N/A</td>
-                                                                        <td> acvillatoro@unexguatemala.com</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Amilcar Mendez</td>
-                                                                        <td>Jefe de Catación</td>    
-                                                                        <td>Ixchel</td>
-                                                                        <td>40318319</td>
-                                                                        <td></td>                        
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Brian Cabrera</td>
-                                                                        <td>IT Department</td>                                                
-                                                                        <td>Oficina Central</td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Byron Escobar</td>
-                                                                        <td>Producción y Seguridad Industrial</td>                                                                                                                                     
-                                                                        <td>Ixchel</td>   
-                                                                        <td></td>                                            
-                                                                        <td></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Carlos Rodríguez</td>
-                                                                        <td>Comercialización</td>                                                                      
-                                                                        <td>Barberena</td>
-                                                                        <td></td>   
-                                                                        <td></td>                                         
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Claudia de León</td>
-                                                                        <td>Recursos Humanos</td>                                                                      
-                                                                        <td>Oficina Central</td>
-                                                                        <td></td>  
-                                                                        <td></td>                                           
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>David Tello</td>
-                                                                        <td>Contable y Finanzas</td>                                                                      
-                                                                        <td>Oficina Central</td>
-                                                                        <td></td>         
-                                                                        <td></td>                                   
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>                                                                                                                         
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>        
-                                        
-                                        <div id="editar" class="tab-pane fade">
-                                            <div class="profile-editar">
-                                                <div class="pt-4 border-bottom-1 pb-4">
-                                                    <div class="form-row">
-                                                        <div class="col-lg-6">
-                                                            <div class="card-header">
-                                                                <h4 class="card-title">
-                                                                    Seleccionar colaborador
-                                                                </h4>
-                                                            </div>
-                                                            <div class="tab-content">
-                                                                <div id="my-posts" class="tab-pane fade active show">
-                                                                    <div class="my-post-content pt-3">
-                                                                        <div class="media ">                                                          
-                                                                            <i class="mdi mdi-24px mdi-account"></i><input class="form-control bg-transparent" placeholder="Nombre de colaborador"></input>
-                                                                            <li class="media dropdown-item">
-                                                                                <span class="success">
-                                                                                    <i class="mdi mdi-24px mdi-account-search"></i>
-                                                                                </span>
-                                                                            </li>
-                                                                        </div>
-                                                                        <br>            
-                                                                    </div>
-                                                                </div>
+                                                    <br> <br>
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <div class="table-responsive">
+                                                                <table class="table student-data-table m-t-20">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>Nombre</th>
+                                                                            <th>Telefono</th>
+                                                                            <th>Correo</th>
+                                                                            <th>Dirección</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>Unex Oficina Central</td>
+                                                                            <td>2427-0100</td>
+                                                                            <td>central@unexguatemala.com</td>
+                                                                            <td>13 calle 3-40 z.10 Nivel 14 Of. 1402 Edificio
+                                                                                Atlantis</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Beneficio Ixchel</td>     
+                                                                            <td>6665-4545</td>
+                                                                            <td>n/a</td>
+                                                                            <td>Km. 17 Carretera al Pacifico, Villa Nueva,
+                                                                                Guatemala C.A.</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Finca Santa Barbara</td>   
+                                                                            <td>5631-0126</td>
+                                                                            <td>santabarbara@unexguatemala.com</td>
+                                                                            <td>San Juan Alotenango,Sacatepéquez,
+                                                                                Guatemala C.A.</td>                                                                        
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Agencia Huhuetenango</td>
+                                                                            <td>7769-0428</td>
+                                                                            <td>n/a</td>
+                                                                            <td>Km. 258.5 Carretera a la Mesilla, Sector
+                                                                                Chimusinique Z.12</td>                                                                        
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Agencia Barberena</td>
+                                                                            <td>40046372</td>
+                                                                            <td>barberena@unexguatemala.com</td>
+                                                                            <td>Km. 53.5 Ruta Interamericana, Barberena
+                                                                                Santa Rosa
+                                                                                </td>                                                                        
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Agencia Coatepeque</td>  
+                                                                            <td>4004-3027</td>
+                                                                            <td>coatepeque@unexguatemala.com</td>
+                                                                            <td>7a. Av. 15-64 Z. 2 Bodega 2B Condado
+                                                                                Santiago Coatepeque Quetzaltenango</td>                                                                        
+                                                                        </tr>        
+                                                                    </tbody>
+                                                                </table>
                                                             </div>  
                                                         </div>
                                                     </div>
-                                                <div class="col-lg-12">
-                                                    <br>
-                                                    <div class="card">
-                                                        <div class="table-responsive">
-                                                            <table class="table student-data-table m-t-20">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th>Nombre</th>
-                                                                        <th>Departamento</th>
-                                                                        <th>Area</th>
-                                                                        <th>Telefono</th>
-                                                                        <th>Correo Electronico</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>Adelita Villatoro</td>
-                                                                        <td>Contabilidad y Finanzas</td>
-                                                                        <td>Oficina Central</td>
-                                                                        <td>N/A</td>
-                                                                        <td> acvillatoro@unexguatemala.com</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Amilcar Mendez</td>
-                                                                        <td>Jefe de Catación</td>    
-                                                                        <td>Ixchel</td>
-                                                                        <td>40318319</td>
-                                                                        <td></td>                        
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Brian Cabrera</td>
-                                                                        <td>IT Department</td>                                                
-                                                                        <td>Oficina Central</td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Byron Escobar</td>
-                                                                        <td>Producción y Seguridad Industrial</td>                                                                                                                                     
-                                                                        <td>Ixchel</td>   
-                                                                        <td></td>                                            
-                                                                        <td></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Carlos Rodríguez</td>
-                                                                        <td>Comercialización</td>                                                                      
-                                                                        <td>Barberena</td>
-                                                                        <td></td>   
-                                                                        <td></td>                                         
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Claudia de León</td>
-                                                                        <td>Recursos Humanos</td>                                                                      
-                                                                        <td>Oficina Central</td>
-                                                                        <td></td>  
-                                                                        <td></td>                                           
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>David Tello</td>
-                                                                        <td>Contable y Finanzas</td>                                                                      
-                                                                        <td>Oficina Central</td>
-                                                                        <td></td>         
-                                                                        <td></td>                                   
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>                                                                                                                         
-                                                    </div>
-                                                </div>
                                                 </div>
                                             </div>
-                                        </div> 
-                                        
-
-                                        <div id="eliminar" class="tab-pane fade">
-                                            <div class="profile-eliminar">
-                                                <div class="form-row">
-                                                    <div class="col-lg-6">
-                                                        <div class="card-header">
-                                                            <h4 class="card-title">
-                                                                Seleccionar colaborador
-                                                            </h4>
+                                            <div id="añadir" class="tab-pane fade">
+                                                <div class="profile-añadir">
+                                                    <div class="pt-4 border-bottom-1 pb-4">
+                                                        <div class="post-input">
+                                                            <p><i class="mdi mdi-24px mdi-account-search"></i> Agregar Regiones</p>                                                            
                                                         </div>
-                                                        <div class="tab-content">
-                                                            <div id="my-posts" class="tab-pane fade active show">
-                                                                <div class="my-post-content pt-3">
-                                                                    <div class="media ">                                                          
-                                                                        <i class="mdi mdi-24px mdi-account"></i><input class="form-control bg-transparent" placeholder="Nombre de colaborador"></input>
-                                                                        <li class="media dropdown-item">
-                                                                            <span class="success">
-                                                                                <i class="mdi mdi-24px mdi-account-search"></i>
-                                                                            </span>
-                                                                        </li>
-                                                                        
-                                                                        <button type="button" class="btn btn-rounded btn-danger espacio ">
-                                                                            <span class="text-danger">
-                                                                                <i class="fa fa-lg fa-ban color-danger"></i>
-                                                                            </span>
-                                                                            ‎      ‏‏‎‎   Eliminar                            
-                                                                        </button>
-           
+                                                            <div class="row">
+                                                                <div class="col-sm-4">
+                                                                    <div class="media">
+                                                                        <i class="mdi mdi-24px mdi-account"></i><input class="form-control bg-transparent" placeholder="Nombre de region"></input>                                     
                                                                     </div>
-                                                                    <br>            
+                                                                </div>
+                                                                <br> <br> <br>
+                                                                <div class="col-sm-4">
+                                                                    <div class="media">
+                                                                        <i class="mdi mdi-24px mdi-account"></i><input class="form-control bg-transparent" placeholder="Telefono"></input>                                     
+                                                                    </div>
                                                                 </div>
                                                             </div>
-                                                        </div>  
-                                                    </div>
+                                                            <br>
+                                                            <div class="row">
+                                                                <div class="col-sm-4">
+                                                                    <div class="media">
+                                                                        <i class="mdi mdi-24px mdi-account"></i><input class="form-control bg-transparent" placeholder="Correo"></input>                                     
+                                                                    </div>
+                                                                </div>
+                                                                <br> <br> <br>
+                                                                <div class="col-sm-4">
+                                                                    <div class="media">
+                                                                        <i class="mdi mdi-24px mdi-account"></i><input class="form-control bg-transparent" placeholder="Dirección"></input>                                     
+                                                                    </div>
+                                                                </div>
+                                                                <br> <br> <br> <br>
+                                                                <div class="col-auto">
+                                                                    <div class="media">
+                                                                        <button type="button" class="btn btn-rounded btn-info ">
+                                                                            <span class="text-danger">
+                                                                                <i class="fa fa-lg fa-plus color-info"></i>
+                                                                            </span>
+                                                                               Guardar                            
+                                                                        </button>
+                                                                    </div>
+                                                                </div>                                   
+                                                                <div class="">
+                                                                    <div class="media">
+                                                                        <button type="button" class="btn btn-rounded btn-danger ">
+                                                                            <span class="text-danger">
+                                                                                <i class="fa fa-lg fa-plus color-info"></i>
+                                                                            </span>
+                                                                                 Cancelar                            
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>                                                            
+                                                            <div class="row">
+                                                                <div class="col-sm-12">
+                                                                    <div class="table-responsive">
+                                                                        <table class="table student-data-table m-t-20">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>Nombre</th>
+                                                                                    <th>Telefono</th>
+                                                                                    <th>Correo</th>
+                                                                                    <th>Dirección</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>Unex Oficina Central</td>
+                                                                                    <td>2427-0100</td>
+                                                                                    <td>central@unexguatemala.com</td>
+                                                                                    <td>13 calle 3-40 z.10 Nivel 14 Of. 1402 Edificio
+                                                                                        Atlantis</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Beneficio Ixchel</td>     
+                                                                                    <td>6665-4545</td>
+                                                                                    <td>n/a</td>
+                                                                                    <td>Km. 17 Carretera al Pacifico, Villa Nueva,
+                                                                                        Guatemala C.A.</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Finca Santa Barbara</td>   
+                                                                                    <td>5631-0126</td>
+                                                                                    <td>santabarbara@unexguatemala.com</td>
+                                                                                    <td>San Juan Alotenango,Sacatepéquez,
+                                                                                        Guatemala C.A.</td>                                                                        
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Agencia Huhuetenango</td>
+                                                                                    <td>7769-0428</td>
+                                                                                    <td>n/a</td>
+                                                                                    <td>Km. 258.5 Carretera a la Mesilla, Sector
+                                                                                        Chimusinique Z.12</td>                                                                        
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Agencia Barberena</td>
+                                                                                    <td>40046372</td>
+                                                                                    <td>barberena@unexguatemala.com</td>
+                                                                                    <td>Km. 53.5 Ruta Interamericana, Barberena
+                                                                                        Santa Rosa
+                                                                                        </td>                                                                        
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Agencia Coatepeque</td>  
+                                                                                    <td>4004-3027</td>
+                                                                                    <td>coatepeque@unexguatemala.com</td>
+                                                                                    <td>7a. Av. 15-64 Z. 2 Bodega 2B Condado
+                                                                                        Santiago Coatepeque Quetzaltenango</td>                                                                        
+                                                                                </tr>        
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>  
+                                                                </div>
+                                                            </div>
+                                                    </div>    
                                                 </div>
-                                                <div class="col-lg-12">
-                                                    <div class="card">
-                                                        <div class="table-responsive">
-                                                            <table class="table student-data-table m-t-20">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th>Nombre</th>
-                                                                        <th>Departamento</th>
-                                                                        <th>Area</th>
-                                                                        <th>Telefono</th>
-                                                                        <th>Correo Electronico</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>Adelita Villatoro</td>
-                                                                        <td>Contabilidad y Finanzas</td>
-                                                                        <td>Oficina Central</td>
-                                                                        <td>N/A</td>
-                                                                        <td> acvillatoro@unexguatemala.com</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Amilcar Mendez</td>
-                                                                        <td>Jefe de Catación</td>    
-                                                                        <td>Ixchel</td>
-                                                                        <td>40318319</td>
-                                                                        <td></td>                        
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Brian Cabrera</td>
-                                                                        <td>IT Department</td>                                                
-                                                                        <td>Oficina Central</td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Byron Escobar</td>
-                                                                        <td>Producción y Seguridad Industrial</td>                                                                                                                                     
-                                                                        <td>Ixchel</td>   
-                                                                        <td></td>                                            
-                                                                        <td></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Carlos Rodríguez</td>
-                                                                        <td>Comercialización</td>                                                                      
-                                                                        <td>Barberena</td>
-                                                                        <td></td>   
-                                                                        <td></td>                                         
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Claudia de León</td>
-                                                                        <td>Recursos Humanos</td>                                                                      
-                                                                        <td>Oficina Central</td>
-                                                                        <td></td>  
-                                                                        <td></td>                                           
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>David Tello</td>
-                                                                        <td>Contable y Finanzas</td>                                                                      
-                                                                        <td>Oficina Central</td>
-                                                                        <td></td>         
-                                                                        <td></td>                                   
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>                                                                                                                         
-                                                    </div>
+                                            </div>
+                                            <div id="editar" class="tab-pane fade">
+                                                <div class="profile-editar">
+                                                    <div class="pt-4 border-bottom-1 pb-4">
+                                                        <div class="post-input">
+                                                            <p><i class="mdi mdi-24px mdi-account-search"></i> Editar informacion de regiones</p>                                                            
+                                                        </div>
+                                                            <div class="row">
+                                                                <div class="col-sm-4">
+                                                                    <div class="media">
+                                                                        <i class="mdi mdi-24px mdi-account"></i><input class="form-control bg-transparent" placeholder="Nombre de region"></input>                                     
+                                                                    </div>
+                                                                </div>
+                                                                <br> <br> <br>
+                                                                <div class="col-sm-4">
+                                                                    <div class="media">
+                                                                        <i class="mdi mdi-24px mdi-account"></i><input class="form-control bg-transparent" placeholder="Telefono"></input>                                     
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <br>
+                                                            <div class="row">
+                                                                <div class="col-sm-4">
+                                                                    <div class="media">
+                                                                        <i class="mdi mdi-24px mdi-account"></i><input class="form-control bg-transparent" placeholder="Correo"></input>                                     
+                                                                    </div>
+                                                                </div>
+                                                                <br> <br> <br>
+                                                                <div class="col-sm-4">
+                                                                    <div class="media">
+                                                                        <i class="mdi mdi-24px mdi-account"></i><input class="form-control bg-transparent" placeholder="Dirección"></input>                                     
+                                                                    </div>
+                                                                </div>
+                                                                <br> <br> <br> <br>
+                                                                <div class="col-auto">
+                                                                    <div class="media">
+                                                                        <button type="button" class="btn btn-rounded btn-info ">
+                                                                            <span class="text-danger">
+                                                                                <i class="fa fa-lg fa-plus color-info"></i>
+                                                                            </span>
+                                                                               Editar                            
+                                                                        </button>
+                                                                    </div>
+                                                                </div>                                   
+                                                                <div class="">
+                                                                    <div class="media">
+                                                                        <button type="button" class="btn btn-rounded btn-danger ">
+                                                                            <span class="text-danger">
+                                                                                <i class="fa fa-lg fa-plus color-info"></i>
+                                                                            </span>
+                                                                                 Cancelar                            
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>                                                            
+                                                            <div class="row">
+                                                                <div class="col-sm-12">
+                                                                    <div class="table-responsive">
+                                                                        <table class="table student-data-table m-t-20">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>Nombre</th>
+                                                                                    <th>Telefono</th>
+                                                                                    <th>Correo</th>
+                                                                                    <th>Dirección</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>Unex Oficina Central</td>
+                                                                                    <td>2427-0100</td>
+                                                                                    <td>central@unexguatemala.com</td>
+                                                                                    <td>13 calle 3-40 z.10 Nivel 14 Of. 1402 Edificio
+                                                                                        Atlantis</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Beneficio Ixchel</td>     
+                                                                                    <td>6665-4545</td>
+                                                                                    <td>n/a</td>
+                                                                                    <td>Km. 17 Carretera al Pacifico, Villa Nueva,
+                                                                                        Guatemala C.A.</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Finca Santa Barbara</td>   
+                                                                                    <td>5631-0126</td>
+                                                                                    <td>santabarbara@unexguatemala.com</td>
+                                                                                    <td>San Juan Alotenango,Sacatepéquez,
+                                                                                        Guatemala C.A.</td>                                                                        
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Agencia Huhuetenango</td>
+                                                                                    <td>7769-0428</td>
+                                                                                    <td>n/a</td>
+                                                                                    <td>Km. 258.5 Carretera a la Mesilla, Sector
+                                                                                        Chimusinique Z.12</td>                                                                        
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Agencia Barberena</td>
+                                                                                    <td>40046372</td>
+                                                                                    <td>barberena@unexguatemala.com</td>
+                                                                                    <td>Km. 53.5 Ruta Interamericana, Barberena
+                                                                                        Santa Rosa
+                                                                                        </td>                                                                        
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Agencia Coatepeque</td>  
+                                                                                    <td>4004-3027</td>
+                                                                                    <td>coatepeque@unexguatemala.com</td>
+                                                                                    <td>7a. Av. 15-64 Z. 2 Bodega 2B Condado
+                                                                                        Santiago Coatepeque Quetzaltenango</td>                                                                        
+                                                                                </tr>        
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>  
+                                                                </div>
+                                                            </div>
+                                                    </div>    
+                                                </div>
+                                            </div>
+                                            <div id="eliminar" class="tab-pane fade">
+                                                <div class="profile-eliminar">
+                                                    <div class="pt-4 border-bottom-1 pb-4">
+                                                        <div class="post-input">
+                                                            <p><i class="mdi mdi-24px mdi-account-search"></i> Editar informacion de regiones</p>                                                            
+                                                        </div>
+                                                            <div class="row">
+                                                                <div class="col-sm-4">
+                                                                    <div class="media">
+                                                                        <i class="mdi mdi-24px mdi-account"></i><input class="form-control bg-transparent" placeholder="Nombre de region"></input> 
+                                                                        <div class="col-auto">
+                                                                            <div class="media">
+                                                                                <span class="success">
+                                                                                    <i class="mdi mdi-24px mdi-account-search"></i>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>                                    
+                                                                    </div>
+                                                                </div>
+                                                                <br> <br>  <br>
+                                   
+                                                                <div class="col-auto">
+                                                                    <div class="media">
+                                                                        <button type="button" class="btn btn-rounded btn-danger ">
+                                                                            <span class="text-danger">
+                                                                                <i class="fa fa-lg fa-plus color-info"></i>
+                                                                            </span>
+                                                                                 Eliminar                            
+                                                                        </button>
+                                                                    </div>
+                                                                </div> 
+                                                            </div>   
+                                                            <br> <br>                                                    
+                                                            <div class="row">
+                                                                <div class="col-sm-12">
+                                                                    <div class="table-responsive">
+                                                                        <table class="table student-data-table m-t-20">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>Nombre</th>
+                                                                                    <th>Telefono</th>
+                                                                                    <th>Correo</th>
+                                                                                    <th>Dirección</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>Unex Oficina Central</td>
+                                                                                    <td>2427-0100</td>
+                                                                                    <td>central@unexguatemala.com</td>
+                                                                                    <td>13 calle 3-40 z.10 Nivel 14 Of. 1402 Edificio
+                                                                                        Atlantis</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Beneficio Ixchel</td>     
+                                                                                    <td>6665-4545</td>
+                                                                                    <td>n/a</td>
+                                                                                    <td>Km. 17 Carretera al Pacifico, Villa Nueva,
+                                                                                        Guatemala C.A.</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Finca Santa Barbara</td>   
+                                                                                    <td>5631-0126</td>
+                                                                                    <td>santabarbara@unexguatemala.com</td>
+                                                                                    <td>San Juan Alotenango,Sacatepéquez,
+                                                                                        Guatemala C.A.</td>                                                                        
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Agencia Huhuetenango</td>
+                                                                                    <td>7769-0428</td>
+                                                                                    <td>n/a</td>
+                                                                                    <td>Km. 258.5 Carretera a la Mesilla, Sector
+                                                                                        Chimusinique Z.12</td>                                                                        
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Agencia Barberena</td>
+                                                                                    <td>40046372</td>
+                                                                                    <td>barberena@unexguatemala.com</td>
+                                                                                    <td>Km. 53.5 Ruta Interamericana, Barberena
+                                                                                        Santa Rosa
+                                                                                        </td>                                                                        
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Agencia Coatepeque</td>  
+                                                                                    <td>4004-3027</td>
+                                                                                    <td>coatepeque@unexguatemala.com</td>
+                                                                                    <td>7a. Av. 15-64 Z. 2 Bodega 2B Condado
+                                                                                        Santiago Coatepeque Quetzaltenango</td>                                                                        
+                                                                                </tr>        
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>  
+                                                                </div>
+                                                            </div>
+                                                    </div>    
                                                 </div>
                                             </div>
                                         </div>
@@ -439,10 +547,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>                        
+                    </div>
                 </div>
             </div>
-        </div>
+        </div>        
         <!--Body end-->
 
         <!--Footer start-->
