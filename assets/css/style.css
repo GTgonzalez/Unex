@@ -7818,7 +7818,8 @@ a {
     text-decoration: none; }
 
 .content-body .container {
-  margin-top: 30px; }
+  margin-top: 30px;
+  margin-bottom: -500px; }
 
 
 .content-body .container-fluid {
@@ -8319,7 +8320,9 @@ svg.pulse-svg {
   width: 100%; }
 
 [data-header-position="fixed"] .content-body {
-  padding-top: 7rem; }
+  padding-top: 6rem; 
+  min-height: 899px !important;
+ }  
 
 [data-header-position="fixed"] .quixnav {
   margin-top: 0; }
@@ -8460,8 +8463,7 @@ svg.pulse-svg {
     .backgroundimg{
       background-size: cover;
       background-position: center center;
-      background-repeat: no-repeat;
-      
+      background-repeat: no-repeat;      
     }
   .header-right .header-profile .dropdown-toggle i {
     font-size: 1.25rem; }
@@ -10948,7 +10950,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
     [data-layout="horizontal"] .content-body .page-titles {
       margin-left: 0;
       margin-right: 0;
-      margin-bottom: 1.875rem; }
+      margin-bottom: 1rem; }
   [data-layout="horizontal"] .footer {
     margin-left: 0;
     margin: 0 auto;
