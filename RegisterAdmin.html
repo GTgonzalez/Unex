@@ -1,0 +1,293 @@
+<!DOCTYPE >
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Register</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="assets/images/favicon.ico">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!--Preloader start-->        
+    <div id="carga">
+        <div id="lottie"></div>
+      </div>
+    <!-- Preloader end-->
+
+    <!--Cuerpo de pagina-->
+    <div id="main-wrapper">
+
+         <!--Header start-->->
+         <div class="nav-header">
+            <a href="Home.html" class="brand-logo">
+                <img class="logo-abbr" src="assets/images/logo.png" alt="">
+                <img class="brand-title" src="assets/images/logo-text.png" alt="">
+            </a>
+
+            <div class="nav-control">
+                <div class="hamburger">
+                    <span class="line"></span><span class="line"></span><span class="line"></span>
+                </div>
+            </div>
+        </div>
+        <div class="header">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <div class="header-left">
+                        </div>
+                    <!--Menu user start-->
+                        <ul class="navbar-nav header-right">
+                            <li class="nav-item dropdown notification_dropdown">
+                                <a class="nav-link" href="#" role="button" data-toggle="dropdown">
+                                    <i class="mdi mdi-24px mdi-account"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <ul class="list-unstyled">
+                                        <li class="media dropdown-item">
+                                            <span class="success"><i class="mdi mdi-36px mdi-account"></i></span>
+                                        </li>               
+                                        <H3>Gerson Gonzalez</H3>
+                                        <hr>
+                                        <div class="media dropdown-item">
+                                            <i class="mdi mdi-24px mdi-cogs"></i><input class="form-controles" type="text"  disabled=»disabled» id="val-username">
+                                        </div>
+                                        <div class="media dropdown-item">
+                                            <i class="mdi mdi-24px mdi-email"></i><input class="form-controles" type="text" disabled=»disabled» id="val-username">
+                                        </div>
+                                        <button class="btn btn-primary mr-3"><span><i
+                                            ></i></span>Edit‏‏‎‏‎‏‏‎</button>
+                                        <button class="btn btn-secondary mr-3"><span><i
+                                            ></i></span>Close‎</button>
+                                    </ul>
+                                </div>
+                                <li class="nav-item dropdown header-profile">
+                                    <a class="nav-link" href="index.html" role="button" data-toggle="dropdown">
+                                        <i class="mdi mdi-24px mdi-logout-variant"></i>  
+                                    </a>
+                                </li>
+                            </li>
+                        </ul>
+                <!--Menu user end-->
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--Header end-->
+
+        <!--Main Menu Sidebar start-->  
+        <div class="quixnav">
+            <div class="quixnav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li class="nav-label first">Main Menu</li>
+                     <!--HOME-->  
+                    <li><a href="Home.html" aria-expanded="false"><i class="mdi mdi-24px mdi-home"></i><span
+                        class="nav-text">Home</span></a>
+                    </li>
+        <!--MENU NUEVOS PRODUCTORES-->                     
+                    <li> 
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                            class="mdi mdi-24px mdi-check-circle"></i><span class="nav-text">Nuevos Productores</span>
+                        </a>
+                    <ul aria-expanded="false">
+        <!--LABOR SOCIAL-->  
+                        <li>
+                            <a href="PerfilSocial.html"><i
+                                class="mdi mdi-24px mdi-account-multiple"></i>Perfil Labor Social
+                            </a>
+                        </li>
+        <!--CERTIFICACIONES-->  
+                        <li>
+                            <a href="PerfilCerti.html"><i
+                                class="mdi mdi-24px mdi-map-marker"></i>Perfil Certificaciones
+                            </a>
+                        </li>
+                    </ul> 
+                    </li>   
+        <!--MENU CONFIGURAIONES-->                                        
+                    <li>  
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                            class="mdi mdi-24px mdi-settings"></i><span class="nav-text">Configuración</span>
+                        </a>
+        <!--PERFILES-->  
+                    <ul aria-expanded="false">
+                        <li>
+                            <a href="Configuración-Colaboradores.html"><i
+                                class="mdi mdi-24px mdi-account-multiple"></i>Lista de perfiles
+                            </a>
+                        </li>
+        <!--REGIONES-->  
+                        <li>
+                            <a href="Regiones.html"><i
+                                class="mdi mdi-24px mdi-map-marker"></i>Regiones
+                            </a>
+                        </li>
+                    </ul>
+                    </li>
+        <!--REPORTES--> 
+                    <li><a href="./Reportes.html" aria-expanded="false"><i class="mdi mdi-24px mdi-file-chart"></i><span
+                        class="nav-text">Reportes</span></a>
+                    </li>
+        <!--PERFIL Y USUARIOS-->
+                    <li class="nav-label">Perfil y Usuariuos</li>
+                    <li><a href="RegisterAdmin.html" aria-expanded="false"><i class="mdi mdi-24px mdi-view-dashboard"></i><span
+                        class="nav-text">Nuevo Usuario</span></a>
+                    </li>                
+                </ul>
+            </div>
+        </div>
+
+        <!--Body start-->
+        <div class="content-body">
+            <div class="container-fluid">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="profile-tab">
+                            <div class="custom-tab-1">
+                                <div class="row">             
+                                    <div class="col-lg-8 col-sm-8">
+                                        <ul class="nav nav-tabs">
+                                            <li class="nav-item"><a href="#my-posts" data-toggle="tab" class="nav-link active show"><i class="mdi mdi-24px mdi-account-search"></i> Crear Usuarios</a>
+                                           </li>
+                                       </ul>
+                                       <br>
+                                       <div class="tab-content">
+                                        <div id="my-posts" class="tab-pane fade active show">
+                                            <div class="post-input">
+                                                <p><i class="mdi mdi-24px mdi-account-search"></i> Datos de Usuario</p>
+                                            </div>
+                                                <div class="row">
+                                                    <div class="col-sm-5">
+                                                        <div class="media">                                                          
+                                                            <i class="mdi mdi-24px mdi-account"></i><input class="form-control bg-transparent" placeholder="Nombre"></input>                                     
+                                                        </div>  
+                                                    </div>
+                                                    <br> <br> <br>  
+                                                    <div class="col-sm-5">
+                                                        <div class="media">       
+                                                            <i class="mdi mdi-24px mdi-account"></i><input class="form-control bg-transparent" placeholder="Apellido"></input>                                                                                       
+                                                        </div> 
+                                                    </div>                                                                                                                
+                                                </div>
+                                                <br>
+                                                <div class="row">
+                                                        <div class="col-sm-5">
+                                                            <div class="media">
+                                                                <i class="mdi mdi-24px mdi-account"></i><input class="form-control bg-transparent" placeholder="Correo Electronico"></input>                                                                                            
+                                                            </div>
+                                                        </div>
+                                                        <br> <br> <br>
+                                                        <div class="col-sm-5">
+                                                            <div class="media">
+                                                                <i class="mdi mdi-24px mdi-account"></i><input class="form-control bg-transparent" placeholder="Contraseña"></input>                                    
+                                                            </div>                                                     
+                                                        </div>
+                                                </div>
+                                                <br>
+                                                <div class="row">    
+                                                    <div class="col-sm-5">
+                                                        <div class="media">
+                                                            <i class="mdi mdi-24px mdi-account"></i><input class="form-control bg-transparent" placeholder="Reafirmar Contraseña"></input>                                    
+                                                        </div>
+                                                    </div>
+                                                    <br> <br> <br>                                      
+                                                </div>
+                                        </div>    
+                                        <br>     
+                                        <div class="row">
+                                            <div class="col-auto">
+                                                <div class="media">                                                          
+                                                    <p><i class="mdi mdi-24px mdi-account-search"></i> Rubro:</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <div class="media">
+                                                    <div class="profile-uoloaded-post border-bottom-1 pb-5">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                            <label class="form-check-label" for="flexRadioDefault1">Administrador</label>            
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                                            <label class="form-check-label" for="flexRadioDefault2">Usuario</label>
+                                                        </div>  
+                                                    </div>
+                                                </div>
+                                            </div>                                                                                            
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-auto">
+                                                <div class="media">
+                                                    <button type="button" class="btn btn-rounded btn-info ">
+                                                        <span class="text-danger">
+                                                            <i class="fa fa-sm fa-plus color-info"></i>
+                                                        </span>
+                                                        Guardar                            
+                                                    </button>
+                                                </div>
+                                            </div>                                   
+                                            <div class="">
+                                                <div class="media">
+                                                    <button type="button" class="btn btn-rounded btn-danger ">
+                                                        <span class="text-danger">
+                                                            <i class="fa fa-sm fa-ban color-danger"></i>
+                                                        </span>
+                                                        Cancelar                            
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>                                                                                
+                                        </div>    
+                                    </div>          
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!--Body end-->
+
+        <!--Footer start-->
+        <div class="footer">
+            <div class="copyright">
+                <div class="logo-f">
+                    <img class="" src="assets/images/LOGO-FOOTHER.png" alt="">
+                    <img class="" src="assets/images/Itochu.png" alt="">    
+                </div>
+            </div>        
+        </div>
+        <!--Footer end-->
+
+        <!--Main Menu Sidebar end-->
+        </div>
+    </div>
+    <!--Scripts-->
+    <!-- Librerias -->
+    <script src="assets/vendor/global/global.min.js"></script>
+    <script src="assets/js/quixnav-init.js"></script>
+    <script src="assets/js/custom.min.js"></script>
+
+    <!--  Graficas -->
+    <script src="assets/vendor/flot/jquery.flot.js"></script>
+    <script src="assets/vendor/flot/jquery.flot.resize.js"></script>
+    <script src="assets/js/dashboard/dashboard-1.js"></script>
+
+    <script src="cargarfoto.js"></script>
+
+    <!--  Preloader -->
+    <script src="animacion.js"></script>    
+    <script>
+    window.onload = function (){
+      var contenedor = document.getElementById('carga');
+      contenedor.style.visibility = 'hidden';
+      contenedor.style.opacity = '0';
+    }
+    </script>
+
+</body>
+
+</html>

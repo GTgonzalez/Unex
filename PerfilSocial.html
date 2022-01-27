@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Perfiles</title>
+    <title>Labor Social</title>
     <!-- Favicon icon -->
     <link rel="icon" type="image/x-icon" sizes="16x16" href="assets/images/favicon.ico">
     <link href="assets/css/style.css" rel="stylesheet">
@@ -82,24 +82,59 @@
             <div class="quixnav-scroll">
                 <ul class="metismenu" id="menu">
                     <li class="nav-label first">Main Menu</li>
+                     <!--HOME-->  
                     <li><a href="Home.html" aria-expanded="false"><i class="mdi mdi-24px mdi-home"></i><span
-                        class="nav-text">Home</span></a></li>
-                        <li class=""><a href="Perfiles.html" aria-expanded="false"><i class="mdi mdi-24px mdi-check-circle"></i><span
-                            class="nav-text">Creacion de perfil</span></a></li>
-                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
-                                class="mdi mdi-24px mdi-settings"></i><span class="nav-text">Configuración</span></a>
-                        <ul aria-expanded="false">
-                            <li><a href="Configuración-Colaboradores.html"><i
-                                class="mdi mdi-24px mdi-account-multiple"></i>Lista de perfiles</a></li>
-                            <li><a href="Regiones.html"><i
-                                class="mdi mdi-24px mdi-map-marker"></i>Regiones</a></li>
-                        </ul>
+                        class="nav-text">Home</span></a>
                     </li>
+        <!--MENU NUEVOS PRODUCTORES-->                     
+                    <li> 
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                            class="mdi mdi-24px mdi-teach"></i><span class="nav-text">Nuevos Productores</span>
+                        </a>
+                    <ul aria-expanded="false">
+        <!--LABOR SOCIAL-->  
+                        <li>
+                            <a href="PerfilSocial.html"><i
+                                class="mdi mdi-24px mdi-account-multiple"></i>Perfil Labor Social
+                            </a>
+                        </li>
+        <!--CERTIFICACIONES-->  
+                        <li>
+                            <a href="PerfilCerti.html"><i
+                                class="mdi mdi-24px mdi-note-plus"></i>Perfil Certificaciones
+                            </a>
+                        </li>
+                    </ul> 
+                    </li>   
+        <!--MENU CONFIGURAIONES-->                                        
+                    <li>  
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                            class="mdi mdi-24px mdi-settings"></i><span class="nav-text">Configuración</span>
+                        </a>
+        <!--PERFILES-->  
+                    <ul aria-expanded="false">
+                        <li>
+                            <a href="Configuración-Colaboradores.html"><i
+                                class="mdi mdi-24px mdi-account-multiple"></i>Lista de perfiles
+                            </a>
+                        </li>
+        <!--REGIONES-->  
+                        <li>
+                            <a href="Regiones.html"><i
+                                class="mdi mdi-24px mdi-map-marker"></i>Regiones
+                            </a>
+                        </li>
+                    </ul>
+                    </li>
+        <!--REPORTES--> 
                     <li><a href="./Reportes.html" aria-expanded="false"><i class="mdi mdi-24px mdi-file-chart"></i><span
-                        class="nav-text">Reportes</span></a></li>
+                        class="nav-text">Reportes</span></a>
+                    </li>
+        <!--PERFIL Y USUARIOS-->
                     <li class="nav-label">Perfil y Usuariuos</li>
-                    <li><a href="./app-calender.html" aria-expanded="false"><i class="mdi mdi-24px mdi-view-dashboard"></i><span
-                        class="nav-text">Usuarios</span></a></li>                
+                    <li><a href="RegisterAdmin.html" aria-expanded="false"><i class="mdi mdi-24px mdi-view-dashboard"></i><span
+                        class="nav-text">Nuevo Usuario</span></a>
+                    </li>                
                 </ul>
             </div>
         </div>
@@ -114,14 +149,14 @@
                                 <div class="row">             
                                     <div class="col-lg-8 col-sm-8">
                                         <ul class="nav nav-tabs">
-                                            <li class="nav-item"><a href="#my-posts" data-toggle="tab" class="nav-link active show"><i class="mdi mdi-24px mdi-account-search"></i> Perfiles</a>
+                                            <li class="nav-item"><a href="#my-posts" data-toggle="tab" class="nav-link active show"><i class="mdi mdi-24px mdi-account-search"></i> Crear Perfil</a>
                                            </li>
                                        </ul>
                                        <br>
                                        <div class="tab-content">
                                         <div id="my-posts" class="tab-pane fade active show">
                                             <div class="post-input">
-                                                <p><i class="mdi mdi-24px mdi-account-search"></i> Datos de perfiles</p>
+                                                <p><i class="mdi mdi-24px mdi-account-search"></i> Datos de perfil de labor social</p>
                                             </div>
                                                 <div class="row">
                                                     <div class="col-sm-5">
@@ -139,15 +174,19 @@
                                                 <br>
                                                 <div class="row">
                                                         <div class="col-sm-5">
+
                                                             <div class="media">
-                                                                <i class="mdi mdi-24px mdi-account"></i><input class="form-control bg-transparent" placeholder="Region"></input>                                                                                            
-                                                            </div>
+                                                                <i class="mdi mdi-24px mdi-account"></i><input class="form-control bg-transparent" placeholder="DPI"></input>                                    
+                                                            </div> 
                                                         </div>
                                                         <br> <br> <br>
                                                         <div class="col-sm-5">
                                                             <div class="media">
-                                                                <i class="mdi mdi-24px mdi-account"></i><input class="form-control bg-transparent" placeholder="DPI"></input>                                    
-                                                            </div>                                                     
+                                                                <i class="mdi mdi-24px mdi-account"></i><select class="form-control bg-transparent" placeholder="Region">
+                                                                    <option value="value1">Huehuetenango</option>    
+                                                                    <option value="value2">Ixchel</option>    
+                                                                </select>                                                                                       
+                                                            </div>                                                    
                                                         </div>
                                                 </div>
                                                 <br>

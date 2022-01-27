@@ -37,8 +37,6 @@ body {
 .href1{
   text-decoration: none;
 }    
-
-
 .login-card {
   border: 0;
   border-radius: 25.5px;
@@ -113,7 +111,6 @@ body {
     background-color: #04456E;
     border-radius: 10px;
     font-size: 17px;
-
     line-height: 20px;
     color: #fff;
     margin-bottom: 24px; }
@@ -132,7 +129,19 @@ body {
     @media (max-width: 767px) {
       .login-card-footer-text {
         margin-bottom: 24px; } }
-  .login-card-footer-nav a {
-    font-size: 14px;
-    color: #919aa3; }
 
+
+        .login-card .login-btn2 {
+          padding: 13px 20px 12px;
+          background-color: #604F36;
+          border-radius: 10px;
+          font-size: 17px;
+          line-height: 20px;
+          color: #fff;
+          margin-bottom: 24px; }
+          .login-card .login-btn2:hover {
+            border: 1px solid #604F36;
+            background-color: transparent;
+            color: #604F36; }
+
+        
