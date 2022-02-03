@@ -145,6 +145,20 @@ body {
             color: #604F36; 
         
           }
+          .login-card .login-btn3 {
+            padding: 13px 20px 12px;
+            background-color: #04456E;
+            border-radius: 10px;
+            font-size: 17px;
+            line-height: 20px;
+            color: #fff;
+            margin-bottom: 24px; }
+            .login-card .login-btn3:hover {
+              border: 1px solid #04456E;
+              background-color: transparent;
+              color: #04456E; 
+          
+            }
 
            
 .ocultar {

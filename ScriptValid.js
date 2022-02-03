@@ -56,12 +56,14 @@ function verificarPasswords() {
     pass2 = document.getElementById('pass2');
  
     // Verificamos si las constraseñas no coinciden 
-    if (pass1.value != pass2.value){
+    if (pass1.value != pass2.value) {
  
         // Si las constraseñas no coinciden mostramos un mensaje 
         document.getElementById("error").classList.add("mostrar"); 
         return false;                
-    }else {
+    }else if (pass1.length > 8)
+    this.value = this.value.slice(0,8); 
+    else {
  
         // Si las contraseñas coinciden ocultamos el mensaje de error
         document.getElementById("error").classList.remove("mostrar");
