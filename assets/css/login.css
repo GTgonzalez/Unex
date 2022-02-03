@@ -142,6 +142,17 @@ body {
           .login-card .login-btn2:hover {
             border: 1px solid #604F36;
             background-color: transparent;
-            color: #604F36; }
+            color: #604F36; 
+        
+          }
+
+           
+.ocultar {
+    display: none;
+}
+ 
+.mostrar {
+    display: block;
+}
 
         

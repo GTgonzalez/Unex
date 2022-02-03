@@ -31,6 +31,15 @@ const validarFormulario = (e) => {
     }
 
 }
+
+ 
+function verificarPasswords() { 
+    pass1 = document.getElementById('pass1');
+    pass2 = document.getElementById('pass2');
+ 
+    
+}
+
 inputs.forEach((input) =>{
     input.addEventListener('keyup', validarFormulario);
     input.addEventListener('blur', validarFormulario);
