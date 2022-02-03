@@ -30,32 +30,38 @@
               </div>
               <p class="login-card-description">Por favor ingrese su información personal</p>
               <!-- FORMULARIO -->
-              <form action="" id="formulario"> 
+              <div id="msg"></div>                
+                <!-- Mensajes de Verificación -->
+                <div id="error" class="alert alert-danger ocultar" role="alert">
+                    Las Contraseñas no coinciden, vuelve a intentar !
+                </div>
+                <div id="ok" class="alert alert-success ocultar" role="alert">
+                    Las Contraseñas coinciden !
+                </div>
+              <form action="" id="formulario" onsubmit="verificarPasswords(); return false"> 
                   <div class="form-group">
-                    <input type="nombre" name="nombre" id="nombre" class="form-control" placeholder="Nombre">
-                  </div>
-                  <div class="form-group">
-                    <input type="nombre" name="nombre" id="nombre" class="form-control" placeholder="Apellido">
-                  </div>              
+                    <input type="text" id="usuario" class="form-control" placeholder="Nombre y Apellido">
+                  </div>           
                   <div class="form-group" id="idForm">
                     <label for="email" class="sr-only">Email</label>
                     <span  tabindex="0" data-toggle="tooltip" title="Ingresar un correo valido">
                       <input  type="email" name="email" id="email" class="form-control" placeholder="Email"> 
                     </span>
                   </div>
-                  <div id="grupo__password" class="form-group mb-4"> <!-- CONTRASEÑA -->
+                  <div id="grupo__password" class="form-group"> <!-- CONTRASEÑA -->
                     <label for="pass1" class="sr-only">Password</label>
                     <span  tabindex="0" data-toggle="tooltip" title="Ingrese su contraseña">
-                      <input type="password" name="password" id="pass1" class="form-control" placeholder="Contraseña">
+                      <input type="password" name="pass1" id="pass1" class="form-control" placeholder="Contraseña">
                     </span>
                   </div>
-                  <div id="grupo__password" class="form-group mb-4"> <!-- CONTRASEÑA -->
+                  <div id="grupo__password" class="form-group"> <!-- CONTRASEÑA -->
                     <label for="pass2" class="sr-only">Password</label>
                     <span  tabindex="0" data-toggle="tooltip" title="Ingrese su contraseña">
-                      <input type="password" name="password" id="pass2" class="form-control" placeholder="Contraseña">
+                      <input type="password" name="pass2" id="pass2" class="form-control" placeholder="Contraseña">
                     </span>
                   </div>
-                  <a  href="#" name="Sign Up" id="login" class="btn btn-block login-btn2 mb-4" type="button" value="Sign Up">Registrarse</a>
+                  <button type="submit" id="login" class="btn btn-block login-btn2 mb-4">Registrarse</button>
+
                 </form>     
             </div>
             <div class="col-md-6">
