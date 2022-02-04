@@ -169,4 +169,11 @@ body {
     display: block;
 }
 
+.icon{
+  color: #604F36; 
+
+}
+.icon:hover{
+  color: #604F36;
+}
         
