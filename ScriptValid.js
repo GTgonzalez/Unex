@@ -1,13 +1,16 @@
+/*Restricciones de campos*/
 const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
 const expresiones = {
     password: /^.{4,12}$/,
     email: /[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+$/
 }
+/*Variables*/
 const campos = {
 	password: false,
 	email: false,
 }
+/*Validación del formulario*/
 const validarFormulario = (e) => {
     switch (e.target.name){
         case "email":
@@ -25,11 +28,8 @@ const validarFormulario = (e) => {
         }
 
     }
-
 }
-
 inputs.forEach((input) =>{
-    // Ontenemos los valores de los campos de contraseñas 
     input.addEventListener('keyup', validarFormulario);
     input.addEventListener('blur', validarFormulario);
 });
@@ -48,7 +48,7 @@ formulario.addEventListener('button', (e) => {
     }
 });
 
-
+/*Validar si los campos son iguales*/
 function verificarPasswords() {
  
     // Ontenemos los valores de los campos de contraseñas 
@@ -75,8 +75,6 @@ function verificarPasswords() {
         document.getElementById("login").disabled = true;
  
         // envío del formulario 
-
         return true;
-    }
- 
+    } 
 }
