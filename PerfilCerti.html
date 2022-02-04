@@ -147,149 +147,300 @@
                         <div class="profile-tab">
                             <div class="custom-tab-1">
                                 <div class="row">             
-                                    <div class="col-lg-8 col-sm-8">
+                                    <div class="col-lg-12 col-sm-12">
                                         <ul class="nav nav-tabs">
-                                            <li class="nav-item"><a href="#my-posts" data-toggle="tab" class="nav-link active show"><i class="mdi mdi-24px mdi-account-search"></i> Crear Perfil</a>
+                                            <li class="nav-item"><a href="#my-posts" data-toggle="tab" class="nav-link active show"><i class="mdi mdi-24px mdi-account-plus"></i>  Crear perfil</a>
+                                           </li>
+                                           <li class="nav-item"><a href="#buscar" data-toggle="tab" class="nav-link"><i class="mdi mdi-24px mdi-account-search"></i> Buscar</a>
                                            </li>
                                        </ul>
                                        <br>
                                        <div class="tab-content">
                                         <div id="my-posts" class="tab-pane fade active show">
-                                            <div class="post-input">
-                                                <p><i class="mdi mdi-24px mdi-account-search"></i> Datos de perfil de certificaciones</p>
+                                            <div class="post-input">                                                 
+                                                <p><i class="mdi mdi-24px mdi-account-edit"></i> Datos personales de colaborador</p>
                                             </div>
                                                 <div class="row">
-                                                    <div class="col-sm-5">
+                                                    <div class="col-sm-3">
                                                         <div class="media">                                                          
                                                             <i class="mdi mdi-24px mdi-account"></i><input class="form-control bg-transparent" placeholder="Nombre de colaborador"></input>                                     
                                                         </div>  
                                                     </div>
                                                     <br> <br> <br>  
-                                                    <div class="col-sm-5">
+                                                    <div class="col-sm-3">
                                                         <div class="media">       
                                                             <i class="mdi mdi-24px mdi-account"></i><input class="form-control bg-transparent" placeholder="Apellido"></input>                                                                                       
+                                                        </div>
+                                                    <br>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <div class="media">
+                                                            <i class="mdi mdi-24px mdi-card-account-details"> </i><input class="form-control bg-transparent" placeholder=" DPI"></input>                                    
                                                         </div> 
-                                                    </div>                                                                                                                
-                                                </div>
-                                                <br>
-                                                <div class="row">
-                                                        <div class="col-sm-5">
-
-                                                            <div class="media">
-                                                                <i class="mdi mdi-24px mdi-account"></i><input class="form-control bg-transparent" placeholder="DPI"></input>                                    
-                                                            </div> 
-                                                        </div>
-                                                        <br> <br> <br>
-                                                        <div class="col-sm-5">
-                                                            <div class="media">
-                                                                <i class="mdi mdi-24px mdi-account"></i><select class="form-control bg-transparent" placeholder="Region">
-                                                                    <option value="value1">Huehuetenango</option>    
-                                                                    <option value="value2">Ixchel</option>    
-                                                                </select>                                                                                       
-                                                            </div>                                                    
-                                                        </div>
+                                                    </div>                                                                                                                                                          
                                                 </div>
                                                 <br>
                                                 <div class="row">    
-                                                    <div class="col-sm-5">
+                                                    <div class="col-sm-3">
                                                         <div class="media">
-                                                            <i class="mdi mdi-24px mdi-account"></i><input class="form-control bg-transparent" placeholder="Fecha nacimiento"></input>                                    
+                                                            <i class="mdi mdi-24px mdi-calendar-account"></i><input class="form-control bg-transparent" placeholder="Fecha nacimiento"></input>                                    
                                                         </div>
                                                     </div>
                                                     <br> <br> <br>
-                                                    <div class="col-sm-5">
+                                                    <div class="col-sm-3">
                                                         <div class="media">
-                                                            <i class="mdi mdi-24px mdi-account"></i><input class="form-control bg-transparent" placeholder="Telefono"></input>                                    
-                                                        </div>
-                                                    </div>                                                
-                                                </div>
-                                        </div>    
-                                        <br>     
-                                        <div class="row">
-                                            <div class="col-auto">
-                                                <div class="media">                                                          
-                                                    <p><i class="mdi mdi-24px mdi-account-search"></i> Sexo:</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-auto">
-                                                <div class="media">
-                                                    <div class="profile-uoloaded-post border-bottom-1 pb-5">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                                            <label class="form-check-label" for="flexRadioDefault1">Masculino</label>            
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                                                            <label class="form-check-label" for="flexRadioDefault2">Femenino</label>
-                                                        </div>  
-                                                    </div>
-                                                </div>
-                                            </div>                                                                                            
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-auto">
-                                                <div class="media">
-                                                    <button type="button" class="btn btn-rounded btn-info ">
-                                                        <span class="text-danger">
-                                                            <i class="fa fa-sm fa-plus color-info"></i>
-                                                        </span>
-                                                        Guardar                            
-                                                    </button>
-                                                </div>
-                                            </div>                                   
-                                            <div class="">
-                                                <div class="media">
-                                                    <button type="button" class="btn btn-rounded btn-danger ">
-                                                        <span class="text-danger">
-                                                            <i class="fa fa-sm fa-ban color-danger"></i>
-                                                        </span>
-                                                        Cancelar                            
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>                                                                                
-                                        </div>    
-                                    </div>          
-                                    <div class="col-lg-4 col-sm-2">   
-                                        <br> <br>                                   
-                                        <div class="post-input ">
-                                            <p><i class="mdi mdi-24px mdi-account-search"></i> Foto de perfil</p>
-                                        </div>
-                                        <br> 
-                                        <div class="row">
-                                            <div class="center1 col-12">
-                                                <div class="avatar-upload">
-                                                    <div class="avatar-edit">
-                                                        <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
-                                                        <label for="imageUpload"></label>
-                                                    </div>
-                                                    <div class="avatar-preview">
-                                                        <div id="imagePreview" style="background-image: url(assets/images/cloud.png);">
+                                                            <i class="mdi mdi-24px mdi-cellphone"></i><input class="form-control bg-transparent" placeholder="Telefono"></input>                                    
                                                         </div>
                                                     </div>
+                                                    <br> <br> <br>
+                                                    <div class="col-auto">
+                                                        <div class="media">                                                          
+                                                            <p><i class="mdi mdi-24px mdi-gender-male-female"></i> Sexo:</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <div class="media">
+                                                            <div class="profile-uoloaded-post border-bottom-1 pb-5">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                                    <label class="form-check-label" for="flexRadioDefault1">Masculino</label>            
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                                                    <label class="form-check-label" for="flexRadioDefault2">Femenino</label>
+                                                                </div>  
+                                                            </div>
+                                                        </div>
+                                                    </div>                                             
+                                                </div>
+                                                <div class="post-input">
+                                                    <p><i class="mdi mdi-24px mdi-clipboard-edit"></i> Datos de Perfil Certificaciones</p>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-3">
+                                                        <div class="media">
+                                                            <i class="mdi mdi-24px mdi-map-marker-radius"></i><select class="form-control bg-transparent" placeholder="Region">
+                                                                <option value="value1">Huehuetenango</option>    
+                                                                <option value="value2">Ixchel</option>    
+                                                            </select>                                                                                       
+                                                        </div>                                                    
+                                                    </div>
+                                                    <br> <br> <br>
+                                                    <div class="col-sm-3">
+                                                        <div class="media">
+                                                            <i class="mdi mdi-24px mdi-map-marker-distance"></i><input class="form-control bg-transparent" placeholder="Municipio"></input>                                    
+                                                        </div> 
+                                                    </div>
+                                                    <br> <br> <br>
+                                                    <div class="col-sm-3">
+                                                        <div class="media">
+                                                            <i class="mdi mdi-24px mdi-home-map-marker"></i><input class="form-control bg-transparent" placeholder="Aldea"></input>                                    
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                                <br>     
+                                                <div class="row">
+                                                        <div class="col-sm-3">
+                                                            <div class="media">
+                                                                <i class="mdi mdi-24px mdi-numeric"></i><input class="form-control bg-transparent" placeholder="Codigo de Cafe"></input>                                    
+                                                            </div> 
+                                                        </div>
+                                                        <br> <br> <br>
+                                                        <div class="col-sm-3">
+                                                            <div class="media">
+                                                                <i class="mdi mdi-24px mdi-home-circle"></i><input class="form-control bg-transparent" placeholder="Nombre de Finca"></input>                                    
+                                                            </div> 
+                                                        </div>
+                                                        <br> <br> <br>
+                                                        <div class="col-sm-3">
+                                                            <div class="media">
+                                                                <i class="mdi mdi-24px mdi-map-marker-question"></i><input class="form-control bg-transparent" placeholder="Tamaño de finca"></input>                                    
+                                                            </div> 
+                                                        </div>
+                                                </div>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-sm-3">
+                                                        <div class="media">
+                                                            <i class="mdi mdi-24px mdi-garage"></i><input class="form-control bg-transparent" placeholder="Area de Producción"></input>                                    
+                                                        </div> 
+                                                    </div
+                                                    <br> <br> <br>
+                                                    <div class="col-sm-3">
+                                                        <div class="media">
+                                                            <i class="mdi mdi-24px mdi-pine-tree"></i><input class="form-control bg-transparent" placeholder="Area de Bosque"></input>                                    
+                                                        </div> 
+                                                    </div>
+                                                    <br> <br> <br>
+                                                    <div class="col-sm-3">
+                                                        <div class="media">
+                                                            <i class="mdi mdi-24px mdi-barn"></i><input class="form-control bg-transparent" placeholder="Area de otros cultivos"></input>                                    
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-auto">
+                                                        <div class="media">
+                                                            <button type="button" class="btn btn-rounded btn-info ">
+                                                                <span class="text-danger">
+                                                                    <i class="fa fa-sm fa-plus color-info"></i>
+                                                                </span>
+                                                                Guardar                            
+                                                            </button>
+                                                        </div>
+                                                    </div>                                   
+                                                    <div class="">
+                                                        <div class="media">
+                                                            <button type="button" class="btn btn-rounded btn-danger ">
+                                                                <span class="text-danger">
+                                                                    <i class="fa fa-sm fa-ban color-danger"></i>
+                                                                </span>
+                                                                Cancelar                            
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                         </div>    
+                                         <div id="buscar" class="tab-pane fade">
+                                            <div  class="profile-buscar">
+                                                <div class="pt-4 border-bottom-1 pb-4">
+                                                    <div class="post-input">
+                                                        <p><i class="mdi mdi-24px mdi-account-search"></i> Buscar Perfiles</p>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-4">
+                                                            <div class="media">
+                                                                <i class="mdi mdi-24px mdi-account"></i><input class="form-control bg-transparent" placeholder="Nombre de colaborador"></input>
+                                                                <div class="col-auto">
+                                                                    <div class="media">
+                                                                        <span class="success">
+                                                                            <i class="mdi mdi-24px mdi-account-search"></i>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <br> <br>  
+                                                    </div>
+                                                    <br> <br>
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <div class="table-responsive">
+                                                                <table class="table student-data-table m-t-20">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>Nombre</th>
+                                                                            <th>Apellido</th>
+                                                                            <th>Dpi</th>
+                                                                            <th>Fecha Nacimiento</th>
+                                                                            <th>Telefono</th>
+                                                                            <th>Sexo</th>
+                                                                            <th>Departamento</th>
+                                                                            <th>Municipio</th>
+                                                                            <th>Comunidad</th>
+                                                                            <th>Codigo de productor</th>
+                                                                            <th>Nombre de Finca</th>
+                                                                            <th>Tamaño de finca</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>Asuncion</td>
+                                                                            <td>Pereira</td>
+                                                                            <td>3004433460101</td>
+                                                                            <td>20-5-99</td>
+                                                                            <td>59641264</td>
+                                                                            <td>F</td>
+                                                                            <td>Sacatepéquez</td>
+                                                                            <td>Ciudad Vieja</td>
+                                                                            <td>Camotal 2</td>
+                                                                            <td>PPCAFE20-GT03001351</td>
+                                                                            <td>N/A</td>
+                                                                            <td>N/A</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Wendy</td>     
+                                                                            <td>Hernandez</td>
+                                                                            <td>3004433460101</td>
+                                                                            <td>20-5-99</td>
+                                                                            <td>59641264</td>
+                                                                            <td>F</td>
+                                                                            <td>Sacatepéquez</td>
+                                                                            <td>Ciudad Vieja</td>
+                                                                            <td>Camotal 1</td>
+                                                                            <td>PPCAFE20-GT03000001</td>                                                                            <td>N/A</td>
+                                                                            <td>N/A</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Antonio</td>    
+                                                                            <td>Ordoñez</td>  
+                                                                            <td>3004433460101</td>  
+                                                                            <td>20-5-99</td> 
+                                                                            <td>59641264</td>
+                                                                            <td>M</td>     
+                                                                            <td>Sacatepéquez</td> 
+                                                                            <td>San Miguel Dueñas</td>
+                                                                            <td>San Sebastián</td>   
+                                                                            <td>PPCAFE20-GT03000451</td>                                                           
+                                                                            <td>N/A</td>
+                                                                            <td>N/A</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Armando</td>
+                                                                            <td>Vargas</td>
+                                                                            <td>3004433460101</td>
+                                                                            <td>20-5-99</td>
+                                                                            <td>59641264</td>     
+                                                                            <td>M</td>       
+                                                                            <td>Sacatepéquez</td>  
+                                                                            <td>San Miguel Dueñas</td>  
+                                                                            <td>San Sebastián</td>   
+                                                                            <td>PPCAFE20-GT03000452</td>   
+                                                                            <td>N/A</td>
+                                                                            <td>N/A</td>                                                   
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Ismael</td>
+                                                                            <td>Gomez</td>
+                                                                            <td>3004433460101</td>
+                                                                            <td>20-5-99</td>
+                                                                            <td>59641264</td>  
+                                                                            <td>M</td>   
+                                                                            <td>Sacatepéquez</td>
+                                                                            <td>Ciudad Vieja</td>
+                                                                            <td>Camotal 1</td>   
+                                                                            <td>PPCAFE20-GT03001352</td>                                                                               <td>N/A</td>
+                                                                            <td>N/A</td>                                                             
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Cesar</td>  
+                                                                            <td>Pamal</td>
+                                                                            <td>3004433460101</td>
+                                                                            <td>20-5-99</td>
+                                                                            <td>59641264</td>   
+                                                                            <td>M</td>
+                                                                            <td>Sacatepéquez</td> 
+                                                                            <td>Ciudad Vieja</td>
+                                                                            <td>Camotal 1</td> 
+                                                                            <td>PPCAFE20-GT03001353</td>                                                                             <td>N/A</td>
+                                                                            <td>N/A</td>                                                                   
+                                                                        </tr>        
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>  
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="center1 col-12">
-                                                <div class="media">
-                                                    <button type="button" class="btn btn-rounded btn-info ">
-                                                        <span class="text-danger">
-                                                            <i class="fa fa-lg fa-plus color-info"></i>                                                            
-                                                        </span>
-                                                        Guardar                            
-                                                    </button>   
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> 
-                                </div>
+                                        </div>                               
+                                    </div>    
+                                </div>          
                             </div>
                         </div>
                     </div>
-
-                    </div>
                 </div>
-
-
+            </div>
         </div>
         </div>
         <!--Body end-->

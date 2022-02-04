@@ -17,6 +17,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+.mdi-office-building-marker:before {
+  content: "\FEFA";
+}
+
+.mdi-identifier:before {
+  content: "\FEFE";
+}
 .mdi-access-point:before {
   content: "\F002";
 }
@@ -33,8 +41,29 @@
   content: "\F005";
 }
 
-.mdi-account-box:before {
-  content: "\F006";
+.mdi-card-account-details:before {
+  content: "\F5D2";
+}
+
+.mdi-account-cowboy-hat:before{
+  content: "\F5CB";
+}
+
+.mdi-calendar-account:before {
+  content: "\F0ED"
+}
+
+.mdi-clipboard-edit:before {
+  content: "\F14E"
+}
+
+.mdi-barn:before {
+  content: "\F073"
+}
+
+.mdi-map-marker-question:before{
+  content: "\F982"
+
 }
 
 .mdi-account-box-multiple:before {
