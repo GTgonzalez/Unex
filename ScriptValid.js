@@ -71,9 +71,6 @@ function verificarPasswords() {
         // Mostramos un mensaje mencionando que las Contraseñas coinciden 
         document.getElementById("ok").classList.remove("ocultar");
  
-        // Desabilitamos el botón de login 
-        document.getElementById("login").disabled = true;
- 
         // envío del formulario 
         return true;
     } 
