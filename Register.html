@@ -39,8 +39,9 @@
                     Las Contraseñas coinciden !
                 </div>
               <form action="" id="formulario" onsubmit="verificarPasswords(); return false"> 
-                  <div class="form-group">
-                    <input type="text" id="usuario" class="form-control" placeholder="Nombre y Apellido">
+                  <div class="form-group" id="f-nombre">
+                    <label for="name" class="sr-only">Nombre y Apellido</label>
+                    <input type="name" name="name" id="name" class="form-control" placeholder="Nombre y Apellido">
                   </div>           
                   <div class="form-group" id="idForm">
                     <label for="email" class="sr-only">Email</label>
@@ -48,19 +49,19 @@
                       <input  type="email" name="email" id="email" class="form-control" placeholder="Email"> 
                     </span>
                   </div>
-                  <div id="grupo__password" class="form-group"> <!-- CONTRASEÑA -->
-                    <label for="pass1" class="sr-only">Password</label>
-                    <span  tabindex="0" data-toggle="tooltip" title="Ingrese su contraseña">
-                      <input type="password" name="pass1" id="pass1" class="form-control" placeholder="Contraseña">
+                  <div class="form-group" id="f-pass"> <!-- CONTRASEÑA -->
+                    <label for="password" class="sr-only">Password</label>
+                    
+                      <input type="password" name="password" id="password" class="form-control" placeholder="Contraseña">
                     </span>
                   </div>
-                  <div id="grupo__password" class="form-group"> <!-- CONTRASEÑA -->
-                    <label for="pass2" class="sr-only">Password</label>
-                    <span  tabindex="0" data-toggle="tooltip" title="Ingrese su contraseña">
-                      <input type="password" name="pass2" id="pass2" class="form-control" placeholder="Validar contraseña">
+                  <div class="form-group" id="f-pass2"> <!-- CONTRASEÑA -->
+                    <label for="password2" class="sr-only">Password2</label>
+                    
+                      <input type="password" name="password2" id="password2" class="form-control" placeholder="Validar contraseña">
                     </span>
                   </div>
-                  <button type="submit" id="login" class="btn btn-block login-btn2 mb-2">Registrarse</button>
+                  <button type="submit" id="button" class="btn btn-block login-btn2 mb-2">Registrarse</button>
                   <br>
                   <a href="index.html" class="icon"><i class="mdi mdi-36px mdi-exit-to-app"></i> Regresar</a>                 
                 </form>     
