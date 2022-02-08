@@ -2,7 +2,7 @@
 const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
 const expresiones = {
-    name: /^[a-zA-ZÀ-ÿ\s]{1,20}$/, // Letras y espacios, pueden llevar acentos.
+    name:  /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
     password: /^.{4,12}$/,
     password2:/^.{4,12}$/,
     email: /[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+$/,
@@ -27,9 +27,14 @@ const validarFormulario = (e) => {
             if(expresiones.name.test(e.target.value)){
                 document.getElementById('f-nombre').classList.remove('form-group-corecto-incorrecto')
                 document.getElementById('f-nombre').classList.add('form-group-corecto') 
+                document.getElementById("button").disabled = false;
+                document.getElementById('toll').classList.add('ocultar')
             } else {
-                document.getElementById('f-nombre').classList.add('form-group-corecto')
-                document.getElementById('f-nombre').classList.remove('form-group-corecto-incorrecto')
+                document.getElementById('f-nombre').classList.add('form-group-corecto-incorrecto')
+                document.getElementById('f-nombre').classList.remove('form-group-corecto')
+                document.getElementById("button").disabled = true;
+                document.getElementById('toll').classList.remove('ocultar')
+                document.getElementById("textova").value = ('¡El usuario no admite simbolos ni numeros!')
             }
         break;
         /*Validación de Password */
@@ -44,10 +49,13 @@ const validarFormulario = (e) => {
         case "email":
         if(expresiones.email.test(e.target.value)) {  
             document.getElementById('idForm').classList.remove('form-group-corecto-incorrecto')
-            document.getElementById('idForm').classList.add('form-group-corecto')  
+            document.getElementById('idForm').classList.add('form-group-corecto')
+            document.getElementById('button').disabled = false
+            
         } else {
             document.getElementById('idForm').classList.add('form-group-corecto-incorrecto')
-            document.getElementById('idForm').classList.remove('form-group-corecto') 
+            document.getElementById('idForm').classList.remove('form-group-corecto')
+            document.getElementById('button').disabled = true
         }
         break;
         /*Validación de Telefono */
@@ -75,11 +83,13 @@ function validarPassword() {
        document.getElementById('f-pass').classList.add('form-group-corecto-incorrecto') 
        document.getElementById('f-pass2').classList.remove('form-group-corecto') 
        document.getElementById('f-pass2').classList.add('form-group-corecto-incorrecto') 
+       document.getElementById('button').disabled = true
    } else {
        document.getElementById('f-pass2').classList.remove('form-group-corecto-incorrecto') 
        document.getElementById('f-pass2').classList.add('form-group-corecto') 
        document.getElementById('f-pass').classList.remove('form-group-corecto-incorrecto')
        document.getElementById('f-pass').classList.add('form-group-corecto')
+       document.getElementById('button').disabled = false
    }
 }
 

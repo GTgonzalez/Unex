@@ -176,4 +176,20 @@ body {
 .icon:hover{
   color: #604F36;
 }
-        
+
+.tol{
+  align-items: center;
+  text-align:center;
+  position: absolute;
+  z-index: 2;
+  border-radius: 5px;
+  background-color: #b73a3aab;
+  margin-top: -50px;
+  height: 30px;
+  width: 350px;
+}
+.texto{
+
+  color: #F9F9F9;
+  font-size:15px;
+}

@@ -25,27 +25,22 @@
         <div class="card login-card">
           <div class="row g-0"> 
             <div class="col-sm-6 card-body">
+              <div id="toll" class="tol ocultar">
+                <a class="texto" id="textova">¡El usuario no admite simbolos ni numeros!</a>
+              </div>
               <div class="brand-wrapper">
                 <img src="assets/images/logo.svg" alt="logo" class="logo">
               </div>
               <p class="login-card-description">Por favor ingrese su información personal</p>
-              <!-- FORMULARIO -->
-              <div id="msg"></div>                
-                <!-- Mensajes de Verificación -->
-                <div id="error" class="alert alert-danger ocultar" role="alert">
-                    Las Contraseñas no coinciden, vuelve a intentar !
-                </div>
-                <div id="ok" class="alert alert-success ocultar" role="alert">
-                    Las Contraseñas coinciden !
-                </div>
-              <form action="" id="formulario" onsubmit="verificarPasswords(); return false"> 
+              <!-- FORMULARIO -->            
+              <form action="" id="formulario">
                   <div class="form-group" id="f-nombre">
-                    <label for="name" class="sr-only">Nombre y Apellido</label>
+                    <label for="name" class="sr-only" >Nombre y Apellido</label>
                     <input type="name" name="name" id="name" class="form-control" placeholder="Nombre y Apellido">
                   </div>           
                   <div class="form-group" id="idForm">
                     <label for="email" class="sr-only">Email</label>
-                    <span  tabindex="0" data-toggle="tooltip" title="Ingresar un correo valido">
+                    <span  tabindex="0" title="Ingresar un correo valido">
                       <input  type="email" name="email" id="email" class="form-control" placeholder="Email"> 
                     </span>
                   </div>
