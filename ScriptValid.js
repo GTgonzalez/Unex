@@ -27,14 +27,15 @@ const validarFormulario = (e) => {
             if(expresiones.name.test(e.target.value)){
                 document.getElementById('f-nombre').classList.remove('form-group-corecto-incorrecto')
                 document.getElementById('f-nombre').classList.add('form-group-corecto') 
-                document.getElementById("button").disabled = false;
                 document.getElementById('toll').classList.add('ocultar')
             } else {
                 document.getElementById('f-nombre').classList.add('form-group-corecto-incorrecto')
                 document.getElementById('f-nombre').classList.remove('form-group-corecto')
-                document.getElementById("button").disabled = true;
-                document.getElementById('toll').classList.remove('ocultar')
-                document.getElementById("textova").value = ('¡El usuario no admite simbolos ni numeros!')
+                document.getElementById('toll').classList.remove('ocultar')  
+                document.getElementById('textova').classList.remove('ocultar')              
+                document.getElementById('textova2').classList.add('ocultar')
+                document.getElementById('textova3').classList.add('ocultar')
+                document.getElementById('textova4').classList.add('ocultar')
             }
         break;
         /*Validación de Password */
@@ -51,11 +52,17 @@ const validarFormulario = (e) => {
             document.getElementById('idForm').classList.remove('form-group-corecto-incorrecto')
             document.getElementById('idForm').classList.add('form-group-corecto')
             document.getElementById('button').disabled = false
+            document.getElementById('toll').classList.add('ocultar')
             
         } else {
             document.getElementById('idForm').classList.add('form-group-corecto-incorrecto')
             document.getElementById('idForm').classList.remove('form-group-corecto')
             document.getElementById('button').disabled = true
+            document.getElementById('toll').classList.remove('ocultar')
+            document.getElementById('textova').classList.add('ocultar')           
+            document.getElementById('textova2').classList.remove('ocultar') 
+            document.getElementById('textova3').classList.add('ocultar')
+            document.getElementById('textova4').classList.add('ocultar')
         }
         break;
         /*Validación de Telefono */
@@ -78,20 +85,27 @@ function validarPassword() {
     password = document.getElementById('password')
     password2 = document.getElementById('password2')
    
-   if (password.value != password2.value){
-       document.getElementById('f-pass').classList.remove('form-group-corecto') 
-       document.getElementById('f-pass').classList.add('form-group-corecto-incorrecto') 
-       document.getElementById('f-pass2').classList.remove('form-group-corecto') 
-       document.getElementById('f-pass2').classList.add('form-group-corecto-incorrecto') 
-       document.getElementById('button').disabled = true
+   if (password.value !== password2.value){
+    document.getElementById('f-pass').classList.remove('form-group-corecto') 
+    document.getElementById('f-pass').classList.add('form-group-corecto-incorrecto') 
+    document.getElementById('f-pass2').classList.remove('form-group-corecto') 
+    document.getElementById('f-pass2').classList.add('form-group-corecto-incorrecto') 
+    document.getElementById('button').disabled = true
+    document.getElementById('toll').classList.remove('ocultar')
+    document.getElementById('textova').classList.add('ocultar')
+    document.getElementById('textova2').classList.add('ocultar')
+    document.getElementById('textova4').classList.add('ocultar')
+    document.getElementById('textova3').classList.remove('ocultar')
    } else {
-       document.getElementById('f-pass2').classList.remove('form-group-corecto-incorrecto') 
-       document.getElementById('f-pass2').classList.add('form-group-corecto') 
-       document.getElementById('f-pass').classList.remove('form-group-corecto-incorrecto')
-       document.getElementById('f-pass').classList.add('form-group-corecto')
-       document.getElementById('button').disabled = false
-   }
-}
+    document.getElementById('f-pass2').classList.remove('form-group-corecto-incorrecto') 
+    document.getElementById('f-pass2').classList.add('form-group-corecto') 
+    document.getElementById('f-pass').classList.remove('form-group-corecto-incorrecto')
+    document.getElementById('f-pass').classList.add('form-group-corecto')
+    document.getElementById('button').disabled = false
+    document.getElementById('toll').classList.add('ocultar')
+   } 
+    }
+    
 
 /*Selección fuera de campos o dentro de ellos*/
 inputs.forEach((input) =>{
@@ -99,15 +113,11 @@ inputs.forEach((input) =>{
     input.addEventListener('blur', validarFormulario);
 });
 /*No enviar informacion en URL*/
-formulario.addEventListener('button', (e) => {
+formulario.addEventListener('submit', (e) => {
     e.preventDefault();
-    if (campos.email  && campos.password ){
-        document.getElementById('idForm').classList.remove('form-group-corecto');
-        document.getElementById('grupo__password').classList.remove('form-group-corecto');
-
-    } else {
-        document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
-        document.getElementById('idForm').classList.add('form-group-corecto-incorrecto')
-        document.getElementById('grupo__password').classList.add('form-group-corecto-incorrecto')
-    }
+    formulario.reset();
+    document.getElementById('f-nombre').classList.remove('form-group-corecto')
+    document.getElementById('f-pass').classList.remove('form-group-corecto')
+    document.getElementById('f-pass2').classList.remove('form-group-corecto')
+    document.getElementById('idForm').classList.remove('form-group-corecto')
 });
