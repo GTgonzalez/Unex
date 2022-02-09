@@ -162,19 +162,21 @@
                                             </div>
                                             <form action="" id="formulario">
                                                 <div class="row">
-                                                    <div class="col-sm-3">
-
+                                                    <br> <br> <br>                                                                                                                  
+                                                     <div class="col-sm-3">
+                                                        <div class="media" id="f-nombre">                                                          
+                                                            <i class="mdi mdi-24px mdi-account"></i><input name="name" type="name" class="form-control bg-transparent" placeholder="Nombre de colaborador"></input>                                     
+                                                        </div>  
                                                     </div>
-                                                    <br> <br> <br>  
                                                     <div class="col-sm-3">
-                                                        <div class="media">       
-                                                            <i class="mdi mdi-24px mdi-account"></i><input id="nombre" class="form-control bg-transparent" placeholder="Apellido"></input>                                                                                       
+                                                        <div class="media" id="f-nombre">       
+                                                            <i class="mdi mdi-24px mdi-account"></i><input name="name" type="name" class="form-control bg-transparent" placeholder="Apellido"></input>                                                                                       
                                                         </div>
                                                     <br>
                                                     </div>
                                                     <div class="col-sm-3">
-                                                        <div class="media">
-                                                            <i class="mdi mdi-24px mdi-card-account-details"> </i><input class="form-control bg-transparent" placeholder=" DPI"></input>                                    
+                                                        <div class="media" id="f-dpi">
+                                                            <i class="mdi mdi-24px mdi-card-account-details"> </i><input  name="dpi" type="dpi" class="form-control bg-transparent" placeholder=" DPI"></input>                                    
                                                         </div> 
                                                     </div>                                                                                                                                                          
                                                 </div>
@@ -182,13 +184,13 @@
                                                 <div class="row">    
                                                     <div class="col-sm-3">
                                                         <div class="media">
-                                                            <i class="mdi mdi-24px mdi-calendar-account"></i><input class="form-control bg-transparent" placeholder="Fecha nacimiento"></input>                                    
+                                                            <i class="mdi mdi-24px mdi-calendar-account"></i><input type="date"class="form-control bg-transparent" placeholder="Fecha nacimiento"></input>                                    
                                                         </div>
                                                     </div>
                                                     <br> <br> <br>
                                                     <div class="col-sm-3">
-                                                        <div class="media">
-                                                            <i class="mdi mdi-24px mdi-cellphone"></i><input class="form-control bg-transparent" placeholder="Telefono"></input>                                    
+                                                        <div class="media" id="f-cel">
+                                                            <i class="mdi mdi-24px mdi-cellphone"></i><input  name="telefono" class="form-control bg-transparent" placeholder="Telefono"></input>                                    
                                                         </div>
                                                     </div>
                                                     <br> <br> <br>
@@ -210,8 +212,22 @@
                                                                 </div>  
                                                             </div>
                                                         </div>
-                                                    </div>                                             
+                                                    </div>                                                                                                                                                                                                
+                                                </div>   
+                                                <div class="row">
+                                                    <div id="toll" class="tol ocultar col-sm-3">
+                                                        <a class="texto" id="textova"><i class="mdi mdi-18px mdi-alert-circle"></i>ㅤEl usuario no admite simbolos ni numeros </a>
+                                                        <a class="texto" id="textova2"><i class="mdi mdi-18px mdi-alert-circle"></i>ㅤIngrese un Email valido</a>
+                                                        <a class="texto" id="textova3"><i class="mdi mdi-18px mdi-alert-circle"></i>ㅤContraseñas no coinciden</a>
+                                                       
+                                                    </div>
+                                                    <div id="toll2" class="tol ocultar col-sm-3">
+                                                        <a class="texto" id="textova5"><i class="mdi mdi-18px mdi-alert-circle"></i>ㅤIngrese un DPI valido ("NO USAR LETRAS")</a>
+                                                        <a class="texto" id="textova6"><i class="mdi mdi-18px mdi-alert-circle"></i>ㅤIngrese un numero de telefono valido</a>
+                                                    </div>                                                     
                                                 </div>
+                                                
+                                                <br>
                                                 <div class="post-input">
                                                     <p><i class="mdi mdi-24px mdi-clipboard-edit"></i> Datos de Perfil Labor Social</p>
                                                 </div>

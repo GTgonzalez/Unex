@@ -160,59 +160,72 @@
                                             <div class="post-input">                                                 
                                                 <p><i class="mdi mdi-24px mdi-account-edit"></i> Datos personales de colaborador</p>
                                             </div>
-                                                <div class="row">
-                                                    <div class="col-sm-3">
-                                                        <div class="media">                                                          
-                                                            <i class="mdi mdi-24px mdi-account"></i><input class="form-control bg-transparent" placeholder="Nombre de colaborador"></input>                                     
-                                                        </div>  
+                                            <div class="row">
+                                                <br> <br> <br>                                                                                                                  
+                                                 <div class="col-sm-3">
+                                                    <div class="media" id="f-nombre">                                                          
+                                                        <i class="mdi mdi-24px mdi-account"></i><input name="name" type="name" class="form-control bg-transparent" placeholder="Nombre de colaborador"></input>                                     
+                                                    </div>  
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <div class="media" id="f-nombre">       
+                                                        <i class="mdi mdi-24px mdi-account"></i><input name="name" type="name" class="form-control bg-transparent" placeholder="Apellido"></input>                                                                                       
                                                     </div>
-                                                    <br> <br> <br>  
-                                                    <div class="col-sm-3">
-                                                        <div class="media">       
-                                                            <i class="mdi mdi-24px mdi-account"></i><input class="form-control bg-transparent" placeholder="Apellido"></input>                                                                                       
+                                                <br>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <div class="media" id="f-dpi">
+                                                        <i class="mdi mdi-24px mdi-card-account-details"> </i><input  name="dpi" type="dpi" class="form-control bg-transparent" placeholder=" DPI"></input>                                    
+                                                    </div> 
+                                                </div>                                                                                                                                                          
+                                            </div>
+                                            <br>
+                                            <div class="row">    
+                                                <div class="col-sm-3">
+                                                    <div class="media">
+                                                        <i class="mdi mdi-24px mdi-calendar-account"></i><input type="date"class="form-control bg-transparent" placeholder="Fecha nacimiento"></input>                                    
+                                                    </div>
+                                                </div>
+                                                <br> <br> <br>
+                                                <div class="col-sm-3">
+                                                    <div class="media" id="f-cel">
+                                                        <i class="mdi mdi-24px mdi-cellphone"></i><input  name="telefono" class="form-control bg-transparent" placeholder="Telefono"></input>                                    
+                                                    </div>
+                                                </div>
+                                                <br> <br> <br>
+                                                <div class="col-auto">
+                                                    <div class="media">                                                          
+                                                        <p><i class="mdi mdi-24px mdi-gender-male-female"></i> Sexo:</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <div class="media">
+                                                        <div class="profile-uoloaded-post border-bottom-1 pb-5">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                                <label class="form-check-label" for="flexRadioDefault1">Masculino</label>            
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                                                <label class="form-check-label" for="flexRadioDefault2">Femenino</label>
+                                                            </div>  
                                                         </div>
-                                                    <br>
                                                     </div>
-                                                    <div class="col-sm-3">
-                                                        <div class="media">
-                                                            <i class="mdi mdi-24px mdi-card-account-details"> </i><input class="form-control bg-transparent" placeholder=" DPI"></input>                                    
-                                                        </div> 
-                                                    </div>                                                                                                                                                          
+                                                </div>                                                                                                                                                                                                
+                                            </div>
+                                                <div class="row">
+                                                    <div id="toll" class="tol ocultar col-sm-3">
+                                                        <a class="texto" id="textova"><i class="mdi mdi-18px mdi-alert-circle"></i>ㅤEl usuario no admite simbolos ni numeros </a>
+                                                        <a class="texto" id="textova2"><i class="mdi mdi-18px mdi-alert-circle"></i>ㅤIngrese un Email valido</a>
+                                                        <a class="texto" id="textova3"><i class="mdi mdi-18px mdi-alert-circle"></i>ㅤContraseñas no coinciden</a>
+                                                       
+                                                    </div>
+                                                    <div id="toll2" class="tol ocultar col-sm-3">
+                                                        <a class="texto" id="textova5"><i class="mdi mdi-18px mdi-alert-circle"></i>ㅤIngrese un DPI valido ("NO USAR LETRAS")</a>
+                                                        <a class="texto" id="textova6"><i class="mdi mdi-18px mdi-alert-circle"></i>ㅤIngrese un numero de telefono valido</a>
+                                                    </div>                                                     
                                                 </div>
                                                 <br>
-                                                <div class="row">    
-                                                    <div class="col-sm-3">
-                                                        <div class="media">
-                                                            <i class="mdi mdi-24px mdi-calendar-account"></i><input class="form-control bg-transparent" placeholder="Fecha nacimiento"></input>                                    
-                                                        </div>
-                                                    </div>
-                                                    <br> <br> <br>
-                                                    <div class="col-sm-3">
-                                                        <div class="media">
-                                                            <i class="mdi mdi-24px mdi-cellphone"></i><input class="form-control bg-transparent" placeholder="Telefono"></input>                                    
-                                                        </div>
-                                                    </div>
-                                                    <br> <br> <br>
-                                                    <div class="col-auto">
-                                                        <div class="media">                                                          
-                                                            <p><i class="mdi mdi-24px mdi-gender-male-female"></i> Sexo:</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-auto">
-                                                        <div class="media">
-                                                            <div class="profile-uoloaded-post border-bottom-1 pb-5">
-                                                                <div class="form-check">
-                                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                                                    <label class="form-check-label" for="flexRadioDefault1">Masculino</label>            
-                                                                </div>
-                                                                <div class="form-check">
-                                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                                                                    <label class="form-check-label" for="flexRadioDefault2">Femenino</label>
-                                                                </div>  
-                                                            </div>
-                                                        </div>
-                                                    </div>                                             
-                                                </div>
                                                 <div class="post-input">
                                                     <p><i class="mdi mdi-24px mdi-clipboard-edit"></i> Datos de Perfil Certificaciones</p>
                                                 </div>
@@ -282,7 +295,7 @@
                                                 <div class="row">
                                                     <div class="col-auto">
                                                         <div class="media">
-                                                            <button type="button" class="btn btn-rounded btn-info ">
+                                                            <button type="button" id="submit" class="btn btn-rounded btn-info ">
                                                                 <span class="text-danger">
                                                                     <i class="fa fa-sm fa-plus color-info"></i>
                                                                 </span>
@@ -474,6 +487,7 @@
 
     <!--  Preloader -->
     <script src="animacion.js"></script>    
+    <script src="ScriptValid.js"></script>
     <script>
     window.onload = function (){
       var contenedor = document.getElementById('carga');

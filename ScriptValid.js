@@ -67,16 +67,27 @@ const validarFormulario = (e) => {
         break;
         /*Validación de Telefono */
         case "telefono":
-        if(expresiones.telefono.test(e.target.value)){
-            document.getElementById('f-tel').classList.remove('form-group-corecto-incorrecto')
-            document.getElementById('f-tel').classList.add('form-group-corecto')            
-        } else {
-            document.getElementById('f-tel').classList.add('form-group-corecto')    
-            document.getElementById('f-tel').classList.remove('form-group-corecto-incorrecto')
-        }
+            if(expresiones.telefono.test(e.target.value)){
+                document.getElementById('toll2').classList.add('ocultar')  
+                     
+            } else {
+                document.getElementById('toll2').classList.remove('ocultar')    
+                document.getElementById('textova').classList.add('ocultar')   
+                document.getElementById('textova5').classList.add('ocultar')   
+                document.getElementById('textova6').classList.remove('ocultar')       
+            }
         break; 
         /*Validación de DPI */
         case "dpi":
+        if(expresiones.dpi.test(e.target.value)){
+            document.getElementById('toll2').classList.add('ocultar')  
+                 
+        } else {
+            document.getElementById('toll2').classList.remove('ocultar')    
+            document.getElementById('textova').classList.add('ocultar') 
+            document.getElementById('textova6').classList.add('ocultar')   
+            document.getElementById('textova5').classList.remove('ocultar')            
+        }
         break;         
     }    
 }
@@ -111,13 +122,4 @@ function validarPassword() {
 inputs.forEach((input) =>{
     input.addEventListener('keyup', validarFormulario);
     input.addEventListener('blur', validarFormulario);
-});
-/*No enviar informacion en URL*/
-formulario.addEventListener('submit', (e) => {
-    e.preventDefault();
-    formulario.reset();
-    document.getElementById('f-nombre').classList.remove('form-group-corecto')
-    document.getElementById('f-pass').classList.remove('form-group-corecto')
-    document.getElementById('f-pass2').classList.remove('form-group-corecto')
-    document.getElementById('idForm').classList.remove('form-group-corecto')
 });

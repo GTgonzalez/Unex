@@ -190,6 +190,7 @@ body {
 }
 .texto{ 
   color: #F9F9F9 !important;
+  background-color: transparent !important;
   font-size:15px;
 }
 .tolV{
