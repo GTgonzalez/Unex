@@ -10349,7 +10349,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
       position: relative; }
     .quixnav .metismenu ul {
       font-weight: bold;
-      background-color: #1c0f54;
+      background-color: #FFFFFF;
       transition: all .2s ease-in-out; }
       .quixnav .metismenu ul a {
         font-weight: bold;

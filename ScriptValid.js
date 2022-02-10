@@ -123,3 +123,13 @@ inputs.forEach((input) =>{
     input.addEventListener('keyup', validarFormulario);
     input.addEventListener('blur', validarFormulario);
 });
+
+formulario.addEventListener('submit', (e) => {   
+    document.getElementById('idForm').classList.remove('form-group-corecto')
+    document.getElementById('f-nombre').classList.remove('form-group-corecto')
+    document.getElementById('f-pass').classList.remove('form-group-corecto') 
+    document.getElementById('f-pass2').classList.remove('form-group-corecto')
+
+    e.preventDefault()
+	formulario.reset();
+});
