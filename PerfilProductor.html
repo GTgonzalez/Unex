@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Labor Social</title>
+    <title>Crear Perfil de Productor</title>
     <!-- Favicon icon -->
     <link rel="icon" type="image/x-icon" sizes="16x16" href="assets/images/favicon.ico">
     <link href="assets/css/style.css" rel="stylesheet">
@@ -90,18 +90,18 @@
                     <li> 
                         <a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
                             class="mdi mdi-24px mdi-teach"></i><span class="nav-text">Nuevos Productores</span>
-                        </a>
+                        </a>                        
                     <ul aria-expanded="false">
-        <!--LABOR SOCIAL-->  
+        <!--PERFIL PRODUCTOR-->  
                         <li>
-                            <a href="PerfilSocial.html"><i
-                                class="mdi mdi-24px mdi-account-multiple"></i>Perfil Labor Social
+                            <a href="PerfilProductor.html"><i
+                                class="mdi mdi-24px mdi-account-multiple"></i>Perfil de Productor
                             </a>
                         </li>
-        <!--CERTIFICACIONES-->  
+        <!--BUSCAR PERFIL PRODUCTOR-->  
                         <li>
-                            <a href="PerfilCerti.html"><i
-                                class="mdi mdi-24px mdi-note-plus"></i>Perfil Certificaciones
+                            <a href="BuscarProductor.html"><i
+                                class="mdi mdi-24px mdi-account-multiple"></i>Buscar Perfil
                             </a>
                         </li>
                     </ul> 
@@ -150,9 +150,6 @@
                                     <div class="col-lg-12 col-sm-12">
                                         <ul class="nav nav-tabs">
                                             <li class="nav-item"><a href="#my-posts" data-toggle="tab" class="nav-link active show"><i class="mdi mdi-24px mdi-account-plus"></i>  Crear perfil</a>
-                                           </li>
-                                           <li class="nav-item"><a href="#buscar" data-toggle="tab" class="nav-link"><i class="mdi mdi-24px mdi-account-search"></i> Buscar</a>
-                                           </li>
                                        </ul>
                                        <br>
                                        <div class="tab-content">
@@ -212,8 +209,73 @@
                                                                 </div>  
                                                             </div>
                                                         </div>
-                                                    </div>                                                                                                                                                                                                
-                                                </div>   
+                                                    </div>                                                                                                                                                                                               
+                                                </div> 
+                                                <div class="row">
+                                                    <br> <br> <br>                                                                                                                  
+                                                     <div class="col-sm-3">
+                                                        <div class="media" id="f-nombre">                                                          
+                                                            <i class="mdi mdi-24px mdi-earth"></i><select  name="" type="name" class="form-control bg-transparent" placeholder="Pais">
+                                                                <option>Guatemala</option>
+                                                            </select >                                     
+                                                        </div>  
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <div class="media" id="f-nombre">       
+                                                            <i class="mdi mdi-24px mdi-home-map-marker"></i><select name="" type="name" class="form-control bg-transparent" placeholder="Departamento">
+                                                                <option>Alta Verapaz</option>
+                                                                <option>Baja Verapaz</option>
+                                                                <option>Chimaltenango</option>
+                                                                <option>Chiquimula</option>
+                                                                <option>El Progreso</option>
+                                                                <option>Escuintla</option>
+                                                                <option>Guatemala</option>
+                                                                <option>Huehuetenango</option>
+                                                                <option>Izabal</option>
+                                                                <option>Jalapa</option>
+                                                                <option>Jutiapa</option>
+                                                                <option>Petén</option>
+                                                                <option>Quetzaltenango</option>
+                                                                <option>Quiché</option>
+                                                                <option>Retalhuleu</option>
+                                                                <option>Sacatepéquez</option>
+                                                                <option>San Marcos</option>
+                                                                <option>Santa Rosa</option>
+                                                                <option>Sololá</option>
+                                                                <option>Suchitepéquez</option>
+                                                                <option>Totonicapán</option>
+                                                                <option>Zacapa</option>
+                                                            </select>                                                                                       
+                                                        </div>
+                                                    <br>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <div class="media" id="f-dpi">
+                                                            <i class="mdi mdi-24px mdi-image-filter-hdr"> </i><select  name="dpi" type="dpi" class="form-control bg-transparent" placeholder="Municipio">
+                                                                <div id="Alta">
+                                                                    <option>Cobán Cabecera</option>
+                                                                    <option>Tactic</option>
+                                                                    <option>Santa Cruz Verapaz</option>
+                                                                    <option>San Juan Chamelco</option>
+                                                                    <option>San Cristóbal Verapaz</option>
+                                                                    <option>San Pedro Carchá</option>
+                                                                    <option>Tamahú</option>
+                                                                    <option>Tucurú</option>
+                                                                    <option>Panzos</option>
+                                                                    <option>Santa María Cahabón	</option>
+                                                                    <option>Lanquín</option>
+                                                                    <option>Chisec</option>
+                                                                    <option>Fray Bartolomé de las Casas</option>
+                                                                    <option>Senahú</option>
+                                                                    <option>Santa Catalina la Tinta</option>
+                                                                    <option>Chaal</option>
+                                                                    <option>Raxruhá</option>
+                                                                </div>
+
+                                                            </select>                                    
+                                                        </div> 
+                                                    </div>                                                                                                                                                          
+                                                </div>  
                                                 <div class="row">
                                                     <div id="toll" class="tol ocultar col-sm-3">
                                                         <a class="texto" id="textova"><i class="mdi mdi-18px mdi-alert-circle"></i>ㅤEl usuario no admite simbolos ni numeros </a>
@@ -229,27 +291,24 @@
                                                 
                                                 <br>
                                                 <div class="post-input">
-                                                    <p><i class="mdi mdi-24px mdi-clipboard-edit"></i> Datos de Perfil Labor Social</p>
+                                                    <p><i class="mdi mdi-24px mdi-clipboard-edit"></i> Datos de productor</p>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-sm-3">
                                                         <div class="media">
-                                                            <i class="mdi mdi-24px mdi-map-marker-radius"></i><select class="form-control bg-transparent" placeholder="Region">
-                                                                <option value="value1">Huehuetenango</option>    
-                                                                <option value="value2">Ixchel</option>    
-                                                            </select>                                                                                       
+                                                            <i class="mdi mdi-24px mdi-map-marker-radius"></i><input class="form-control bg-transparent" placeholder="Comunidad"></input>                                                                                       
                                                         </div>                                                    
                                                     </div>
                                                     <br> <br> <br>
                                                     <div class="col-sm-3">
                                                         <div class="media">
-                                                            <i class="mdi mdi-24px mdi-map-marker-distance"></i><input class="form-control bg-transparent" placeholder="Municipio"></input>                                    
+                                                            <i class="mdi mdi-24px mdi-coffee-to-go"></i><input class="form-control bg-transparent" placeholder="Codigo cafe practices"></input>                                    
                                                         </div> 
                                                     </div>
                                                     <br> <br> <br>
                                                     <div class="col-sm-3">
                                                         <div class="media">
-                                                            <i class="mdi mdi-24px mdi-home-map-marker"></i><input class="form-control bg-transparent" placeholder="Comunidad"></input>                                    
+                                                            <i class="mdi mdi-24px mdi-barcode"></i><input class="form-control bg-transparent" placeholder="Codigo de productor"></input>                                    
                                                         </div> 
                                                     </div>
                                                 </div>
@@ -257,19 +316,23 @@
                                                 <div class="row">
                                                         <div class="col-sm-3">
                                                             <div class="media">
-                                                                <i class="mdi mdi-24px mdi-barcode"></i><input class="form-control bg-transparent" placeholder="Codigo de Productor"></input>                                    
+                                                                <i class="mdi mdi-24px mdi-map-marker-distance"></i><input class="form-control bg-transparent" placeholder="Área total"></input>                                    
                                                             </div> 
                                                         </div>
                                                         <br> <br> <br>
                                                         <div class="col-sm-3">
                                                             <div class="media"> 
-                                                                <i class="mdi mdi-24px mdi-home-circle"></i><input class="form-control bg-transparent" placeholder="Nombre de Finca"></input>                                    
+                                                                <i class="mdi mdi-24px mdi-map-marker-circle"></i><input class="form-control bg-transparent" placeholder="Área de producción"></input>                                    
                                                             </div> 
                                                         </div>
                                                         <br> <br> <br>
                                                         <div class="col-sm-3">
                                                             <div class="media">
-                                                                <i class="mdi mdi-24px mdi-map-marker-question"></i><input class="form-control bg-transparent" placeholder="Tamaño de finca"></input>                                    
+                                                                <i class="mdi mdi-24px mdi-map-marker-question"></i><select class="form-control bg-transparent" placeholder="Tamaño de finca">
+                                                                    <option>Small</option>
+                                                                    <option>Medium</option>
+                                                                    <option>Medium</option>
+                                                                </select>                                    
                                                             </div> 
                                                         </div>
                                                 </div>
@@ -296,146 +359,9 @@
                                                         </div>
                                                     </div>
                                                 </div>
-
                                             </form>
-
-                                        </div>    
-     
-                                        <div id="buscar" class="tab-pane fade">
-                                            <div  class="profile-buscar">
-                                                <div class="pt-4 border-bottom-1 pb-4">
-                                                    <div class="post-input">
-                                                        <p><i class="mdi mdi-24px mdi-account-search"></i> Buscar Perfiles</p>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-sm-4">
-                                                            <div class="media">
-                                                                <i class="mdi mdi-24px mdi-account"></i><input class="form-control bg-transparent" placeholder="Nombre de colaborador"></input>
-                                                                <div class="col-auto">
-                                                                    <div class="media">
-                                                                        <span class="success">
-                                                                            <i class="mdi mdi-24px mdi-account-search"></i>
-                                                                        </span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <br> <br>  
-                                                    </div>
-                                                    <br> <br>
-                                                    <div class="row">
-                                                        <div class="col-sm-12">
-                                                            <div class="table-responsive">
-                                                                <table class="table student-data-table m-t-20">
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th>Nombre</th>
-                                                                            <th>Apellido</th>
-                                                                            <th>Dpi</th>
-                                                                            <th>Fecha Nacimiento</th>
-                                                                            <th>Telefono</th>
-                                                                            <th>Sexo</th>
-                                                                            <th>Departamento</th>
-                                                                            <th>Municipio</th>
-                                                                            <th>Comunidad</th>
-                                                                            <th>Codigo de productor</th>
-                                                                            <th>Nombre de Finca</th>
-                                                                            <th>Tamaño de finca</th>
-                                                                        </tr>
-                                                                    </thead>
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td>Asuncion</td>
-                                                                            <td>Pereira</td>
-                                                                            <td>3004433460101</td>
-                                                                            <td>20-5-99</td>
-                                                                            <td>59641264</td>
-                                                                            <td>F</td>
-                                                                            <td>Sacatepéquez</td>
-                                                                            <td>Ciudad Vieja</td>
-                                                                            <td>Camotal 2</td>
-                                                                            <td>PPCAFE20-GT03001351</td>
-                                                                            <td>N/A</td>
-                                                                            <td>N/A</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Wendy</td>     
-                                                                            <td>Hernandez</td>
-                                                                            <td>3004433460101</td>
-                                                                            <td>20-5-99</td>
-                                                                            <td>59641264</td>
-                                                                            <td>F</td>
-                                                                            <td>Sacatepéquez</td>
-                                                                            <td>Ciudad Vieja</td>
-                                                                            <td>Camotal 1</td>
-                                                                            <td>PPCAFE20-GT03000001</td>                                                                            <td>N/A</td>
-                                                                            <td>N/A</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Antonio</td>    
-                                                                            <td>Ordoñez</td>  
-                                                                            <td>3004433460101</td>  
-                                                                            <td>20-5-99</td> 
-                                                                            <td>59641264</td>
-                                                                            <td>M</td>     
-                                                                            <td>Sacatepéquez</td> 
-                                                                            <td>San Miguel Dueñas</td>
-                                                                            <td>San Sebastián</td>   
-                                                                            <td>PPCAFE20-GT03000451</td>                                                           
-                                                                            <td>N/A</td>
-                                                                            <td>N/A</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Armando</td>
-                                                                            <td>Vargas</td>
-                                                                            <td>3004433460101</td>
-                                                                            <td>20-5-99</td>
-                                                                            <td>59641264</td>     
-                                                                            <td>M</td>       
-                                                                            <td>Sacatepéquez</td>  
-                                                                            <td>San Miguel Dueñas</td>  
-                                                                            <td>San Sebastián</td>   
-                                                                            <td>PPCAFE20-GT03000452</td>   
-                                                                            <td>N/A</td>
-                                                                            <td>N/A</td>                                                   
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Ismael</td>
-                                                                            <td>Gomez</td>
-                                                                            <td>3004433460101</td>
-                                                                            <td>20-5-99</td>
-                                                                            <td>59641264</td>  
-                                                                            <td>M</td>   
-                                                                            <td>Sacatepéquez</td>
-                                                                            <td>Ciudad Vieja</td>
-                                                                            <td>Camotal 1</td>   
-                                                                            <td>PPCAFE20-GT03001352</td>                                                                               <td>N/A</td>
-                                                                            <td>N/A</td>                                                             
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Cesar</td>  
-                                                                            <td>Pamal</td>
-                                                                            <td>3004433460101</td>
-                                                                            <td>20-5-99</td>
-                                                                            <td>59641264</td>   
-                                                                            <td>M</td>
-                                                                            <td>Sacatepéquez</td> 
-                                                                            <td>Ciudad Vieja</td>
-                                                                            <td>Camotal 1</td> 
-                                                                            <td>PPCAFE20-GT03001353</td>                                                                             <td>N/A</td>
-                                                                            <td>N/A</td>                                                                   
-                                                                        </tr>        
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>  
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                                                          
-                                    </div>  
-                                   
+                                        </div>                            
+                                    </div>                                     
                                 </div>                                   
                             </div>
                         </div>
@@ -484,7 +410,5 @@
       contenedor.style.opacity = '0';
     }
     </script>
-
 </body>
-
 </html>
