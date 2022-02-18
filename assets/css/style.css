@@ -1383,7 +1383,7 @@ pre {
   }
   .table th,
   .table td {
-    padding: 0.75rem;
+    padding: 0.55rem;
     vertical-align: top;
     border: 2px solid #CCCCCC;
     border-radius: 10px !important ; }
@@ -16760,7 +16760,7 @@ table.dataTable tbody td {
   padding: 15px 18px; }
 
 table.dataTable tr.selected {
-  color: #593bdb; }
+  color: #006A92; }
 
 table.dataTable tfoot th {
   color: #454545;
