@@ -211,71 +211,59 @@
                                                         </div>
                                                     </div>                                                                                                                                                                                               
                                                 </div> 
-                                                <div class="row">
-                                                    <br> <br> <br>                                                                                                               
-                                                     <div class="col-sm-3">
-                                                        <div class="media" id="f-nombre">                                                          
-                                                            <i class="mdi mdi-24px mdi-earth"></i><select  name="" type="name" class="form-control bg-transparent" placeholder="Pais">
-                                                                <option>Guatemala</option>
-                                                            </select >                                     
-                                                        </div>  
-                                                    </div>
+                                            </form>
+                                            <form name="f1"> 
+                                            <div class="row">
+                                                <br> <br> <br>                                                                                                               
+                                                 <div class="col-sm-3">
+                                                    <div class="media" id="f-nombre">                                                          
+                                                        <i class="mdi mdi-24px mdi-earth"></i><select  name="" type="name" class="form-control bg-transparent" placeholder="Pais">
+                                                            <option>Guatemala</option>
+                                                        </select >                                     
+                                                    </div>  
+                                                </div>                                                                                                    
                                                     <div class="col-sm-3">
-                                                        <div class="media" id="f-nombre">       
-                                                            <i class="mdi mdi-24px mdi-home-map-marker"></i><select name="" type="name" class="form-control bg-transparent" placeholder="Departamento">
-                                                                <option>Alta Verapaz</option>
-                                                                <option>Baja Verapaz</option>
-                                                                <option>Chimaltenango</option>
-                                                                <option>Chiquimula</option>
-                                                                <option>El Progreso</option>
-                                                                <option>Escuintla</option>
-                                                                <option>Guatemala</option>
-                                                                <option>Huehuetenango</option>
-                                                                <option>Izabal</option>
-                                                                <option>Jalapa</option>
-                                                                <option>Jutiapa</option>
-                                                                <option>Petén</option>
-                                                                <option>Quetzaltenango</option>
-                                                                <option>Quiché</option>
-                                                                <option>Retalhuleu</option>
-                                                                <option>Sacatepéquez</option>
-                                                                <option>San Marcos</option>
-                                                                <option>Santa Rosa</option>
-                                                                <option>Sololá</option>
-                                                                <option>Suchitepéquez</option>
-                                                                <option>Totonicapán</option>
-                                                                <option>Zacapa</option>
-                                                            </select>                                                                                       
+                                                        <div class="media">    
+                                                                <i class="mdi mdi-24px mdi-home-map-marker"></i>
+                                                                <select name="Departamentos" id="Departamentos" onchange="cambio_municipio()" class="form-control">
+                                                                    <option value="0" Departamentos>Departamentos...
+                                                                    <option value="1">Alta Verapaz
+                                                                    <option value="2">Baja Verapaz
+                                                                    <option value="3">Chimaltenango
+                                                                    <option value="4">Chiquimula
+                                                                    <option value="5">El Progreso
+                                                                    <option value="6">Escuintla</option>
+                                                                    <option value="7">Guatemala</option>
+                                                                    <option value="8">Huehuetenango</option>
+                                                                    <option value="9">Izabal</option>
+                                                                    <option value="10">Jalapa</option>
+                                                                    <option value="11">Jutiapa</option>
+                                                                    <option value="12">Petén</option>
+                                                                    <option value="13">Quetzaltenango</option>
+                                                                    <option value="14">Quiché</option>
+                                                                    <option value="15">Retalhuleu</option>
+                                                                    <option value="16">Sacatepéquez</option>
+                                                                    <option value="17">San Marcos</option>
+                                                                    <option value="18">Santa Rosa</option>
+                                                                    <option value="19">Sololá</option>
+                                                                    <option value="20">Suchitepéquez</option>
+                                                                    <option value="21">Totonicapán</option>
+                                                                    <option value="22">Zacapa</option>
+                                                                </select>                                                                                       
+                                                            </div>
+                                                        <br>
                                                         </div>
-                                                    <br>
-                                                    </div>
-                                                    <div class="col-sm-3">
-                                                        <div class="media" id="f-dpi">
-                                                            <i class="mdi mdi-24px mdi-image-filter-hdr"> </i><select  name="dpi" type="dpi" class="form-control bg-transparent" placeholder="Municipio">
-                                                                <div id="Alta">
-                                                                    <option>Cobán Cabecera</option>
-                                                                    <option>Tactic</option>
-                                                                    <option>Santa Cruz Verapaz</option>
-                                                                    <option>San Juan Chamelco</option>
-                                                                    <option>San Cristóbal Verapaz</option>
-                                                                    <option>San Pedro Carchá</option>
-                                                                    <option>Tamahú</option>
-                                                                    <option>Tucurú</option>
-                                                                    <option>Panzos</option>
-                                                                    <option>Santa María Cahabón	</option>
-                                                                    <option>Lanquín</option>
-                                                                    <option>Chisec</option>
-                                                                    <option>Fray Bartolomé de las Casas</option>
-                                                                    <option>Senahú</option>
-                                                                    <option>Santa Catalina la Tinta</option>
-                                                                    <option>Chaal</option>
-                                                                    <option>Raxruhá</option>
-                                                                </div>
-
-                                                            </select>                                    
+                                                        <div class="col-sm-3">
+                                                            <div class="media">
+                                                                <i class="mdi mdi-24px mdi-image-filter-hdr"> </i>
+                                                                <select  name="Municipios" class="form-control">
+                                                                        <option value="-" >Municipios</option> 
+                                                                </select>                                    
                                                         </div> 
-                                                    </div>                                                                                                                                                          
-                                                </div> 
+                                                    </div>
+                                                </form>                                                                                                                                                                                                              
+                                            </div> 
+                                                
                                                 <br> <br> 
                                                 <div class="row">
                                                     <div id="toll" class="tol ocultar col-sm-3">
@@ -332,7 +320,7 @@
                                                                 <i class="mdi mdi-24px mdi-map-marker-question"></i><select class="form-control bg-transparent" placeholder="Tamaño de finca">
                                                                     <option>Small</option>
                                                                     <option>Medium</option>
-                                                                    <option>Medium</option>
+                                                                    <option>Large</option>
                                                                 </select>                                    
                                                             </div> 
                                                         </div>
@@ -360,7 +348,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </form>
+                                           
                                         </div>                            
                                     </div>                                     
                                 </div>                                   
@@ -393,11 +381,6 @@
     <script src="assets/vendor/global/global.min.js"></script>
     <script src="assets/js/quixnav-init.js"></script>
     <script src="assets/js/custom.min.js"></script>
-
-    <!--  Graficas -->
-    <script src="assets/vendor/flot/jquery.flot.js"></script>
-    <script src="assets/vendor/flot/jquery.flot.resize.js"></script>
-    <script src="assets/js/dashboard/dashboard-1.js"></script>
 
     <script src="cargarfoto.js"></script>
 
